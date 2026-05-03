@@ -1,0 +1,28 @@
+{
+  "title": "VNGenerator",
+  "description": "Biblioteca de novelas visuales · vanilla web · sin frameworks",
+  "vns": [
+    {
+      "title": "Demo: Despertar",
+      "author": "Manu",
+      "description": "Capítulo de demostración con personajes, fondos, sobrefondo y bifurcación.",
+      "path": "./vns/demo/chapter.json",
+      "cover": "./vns/demo/cover.svg",
+      "tags": ["demo", "tutorial", "transiciones"]
+    },
+    {
+      "title": "Demo: variables, gosub y motion",
+      "author": "Manu",
+      "description": "Capítulo técnico que ejercita las features de programación: variables, condicionales, gosub/return, wait inline, formato y movement.",
+      "path": "./vns/cap-vars/chapter.json",
+      "tags": ["demo", "vars", "gosub", "motion"]
+    },
+    {
+      "title": "Test: catálogo de transiciones",
+      "author": "Manu",
+      "description": "Una pasada por cada uno de los 14 tipos de transición disponibles.",
+      "path": "./vns/cap-test/chapter.json",
+      "tags": ["test", "técnico"]
+    }
+  ]
+}

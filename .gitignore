@@ -1,0 +1,21 @@
+# Dump original de archivos sueltos del proyecto (se reorganizó en css/, js/, vns/)
+files/
+
+# Investigación previa, no es código
+compass_artifact_*.md
+
+# Configuración local de Claude Code (preview server, etc)
+.claude/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Saves de prueba / dumps
+*.local.json

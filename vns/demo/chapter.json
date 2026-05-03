@@ -1,0 +1,181 @@
+{
+  "$schema": "vngenerator/v1",
+  "id": "demo-cap-01",
+  "title": "Demo: Capítulo 1 — Despertar",
+  "author": "Manu",
+  "description": "Una demo que muestra todas las transiciones del motor.",
+  "resolution": { "w": 1920, "h": 1080 },
+  "defaults": {
+    "transition": { "type": "fade", "duration": 400 },
+    "textSpeed": 35
+  },
+  "assets": {
+    "images": "./img/",
+    "audio": "./audio/"
+  },
+  "slides": [
+    {
+      "id": "intro",
+      "layers": {},
+      "text": { "body": "Bienvenido a VNGenerator. Toca o pulsa Espacio para avanzar." },
+      "transition": { "type": "fadeWhite", "duration": 800 }
+    },
+    {
+      "id": "s001",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" }
+      },
+      "text": { "body": "Empezamos con un fondo de aula al atardecer." },
+      "transition": { "type": "fade", "duration": 600 }
+    },
+    {
+      "id": "s002",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" },
+        "charCenter": { "src": "char-ana-smile.svg", "x": 0.5, "y": 0, "anchor": "bottom-center" }
+      },
+      "text": { "speaker": "Ana", "body": "¡Hola! Yo soy Ana. Aparezco en el centro con una transición fade." },
+      "transition": {
+        "perLayer": {
+          "charCenter": { "type": "fade", "duration": 500 }
+        }
+      }
+    },
+    {
+      "id": "s003",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" },
+        "charCenter": { "src": "char-ana-blush.svg", "x": 0.5, "y": 0 }
+      },
+      "text": { "speaker": "Ana", "body": "Solo cambio de expresión. Crossfade *únicamente* en mi capa, el fondo se queda quieto." },
+      "transition": {
+        "perLayer": {
+          "charCenter": { "type": "crossfade", "duration": 350 }
+        }
+      }
+    },
+    {
+      "id": "s004",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" },
+        "charCenter": { "src": "char-ana-smile.svg", "x": 0.5, "y": 0 },
+        "charRight": { "src": "char-luis-neutral.svg", "x": 0.78, "y": 0 }
+      },
+      "text": { "speaker": "Ana", "body": "Y ahora aparece Luis desde la derecha (slide-in)." },
+      "transition": {
+        "perLayer": {
+          "charRight": { "type": "slide-in", "from": "right", "duration": 600 },
+          "charCenter": { "type": "crossfade", "duration": 300 }
+        }
+      }
+    },
+    {
+      "id": "s005",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" },
+        "charCenter": { "src": "char-ana-smile.svg", "x": 0.5, "y": 0 },
+        "charRight": { "src": "char-luis-neutral.svg", "x": 0.78, "y": 0 }
+      },
+      "text": { "speaker": "Luis", "body": "Hola... me llamo Luis. ¿Qué hacemos aquí?" }
+    },
+    {
+      "id": "s006",
+      "layers": {
+        "bg1": { "src": "bg-aula-noche.svg" },
+        "charCenter": { "src": "char-ana-smile.svg", "x": 0.5, "y": 0 },
+        "charRight": { "src": "char-luis-neutral.svg", "x": 0.78, "y": 0 }
+      },
+      "text": { "body": "El fondo cambia a noche con un dissolve. Los personajes se quedan." },
+      "transition": {
+        "perLayer": {
+          "bg1": { "type": "dissolve", "duration": 1200 }
+        }
+      }
+    },
+    {
+      "id": "s007",
+      "layers": {
+        "bg1": { "src": "bg-aula-noche.svg" },
+        "overBg": { "src": "over-niebla.svg" },
+        "charCenter": { "src": "char-ana-blush.svg", "x": 0.5, "y": 0 },
+        "charRight": { "src": "char-luis-neutral.svg", "x": 0.78, "y": 0 }
+      },
+      "text": { "speaker": "Ana", "body": "*Aparece niebla en la sobrefondo, y yo me ruborizo.*" },
+      "transition": {
+        "perLayer": {
+          "overBg": { "type": "fade", "duration": 800 },
+          "charCenter": { "type": "crossfade", "duration": 400 }
+        }
+      }
+    },
+    {
+      "id": "s_choice",
+      "choice": {
+        "prompt": "¿Qué hace Ana?",
+        "options": [
+          { "label": "Sale corriendo (transición wipe)", "next": "s_correr" },
+          { "label": "Se queda y habla con Luis", "next": "s_quedarse" }
+        ]
+      }
+    },
+    {
+      "id": "s_correr",
+      "layers": {
+        "bg1": { "src": "bg-exterior.svg" }
+      },
+      "text": { "body": "Ana sale corriendo al exterior." },
+      "transition": { "type": "wipe-left", "duration": 700 }
+    },
+    {
+      "id": "s_correr_2",
+      "layers": {
+        "bg1": { "src": "bg-exterior.svg" },
+        "charCenter": { "src": "char-ana-blush.svg", "x": 0.5, "y": 0 }
+      },
+      "text": { "speaker": "Ana", "body": "Necesitaba aire... ¡corrí muy rápido!" },
+      "transition": {
+        "perLayer": { "charCenter": { "type": "fade", "duration": 400 } }
+      }
+    },
+    {
+      "id": "s_correr_3",
+      "layers": {
+        "bg1": { "src": "bg-exterior.svg" },
+        "charCenter": { "src": "char-ana-blush.svg", "x": 0.5, "y": 0 }
+      },
+      "text": { "body": "(efecto pixelate al final)" },
+      "transition": { "type": "pixelate", "duration": 800 },
+      "goto": "fin"
+    },
+    {
+      "id": "s_quedarse",
+      "layers": {
+        "bg1": { "src": "bg-aula-noche.svg" },
+        "overBg": { "src": "over-niebla.svg" },
+        "charCenter": { "src": "char-ana-smile.svg", "x": 0.5, "y": 0 },
+        "charRight": { "src": "char-luis-neutral.svg", "x": 0.78, "y": 0 }
+      },
+      "text": { "speaker": "Ana", "body": "Vale, me quedo. ¿De qué quieres hablar, Luis?" },
+      "transition": {
+        "perLayer": { "charCenter": { "type": "crossfade", "duration": 300 } }
+      }
+    },
+    {
+      "id": "s_quedarse_2",
+      "layers": {
+        "bg1": { "src": "bg-aula-noche.svg" },
+        "overBg": { "src": "over-niebla.svg" },
+        "charCenter": { "src": "char-ana-smile.svg", "x": 0.5, "y": 0 },
+        "charRight": { "src": "char-luis-neutral.svg", "x": 0.78, "y": 0 }
+      },
+      "text": { "speaker": "Luis", "body": "De nada importante. Solo quería que te quedaras." },
+      "transition": "default"
+    },
+    {
+      "id": "fin",
+      "layers": {},
+      "text": { "body": "Fin de la demo. Pulsa para volver." },
+      "transition": { "type": "fade", "duration": 1000 }
+    }
+  ]
+}

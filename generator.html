@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0e10">
+  <title>VNGenerator · Generador</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/reader.css">
+  <link rel="stylesheet" href="./css/ui.css">
+  <link rel="stylesheet" href="./css/generator.css">
+</head>
+<body>
+  <div id="gen-app">
+    <div class="gen-toolbar">
+      <h1>VNGenerator · Editor</h1>
+      <button id="btn-new" title="Capítulo nuevo">＋ Nuevo</button>
+      <button id="btn-load" title="Cargar JSON">↑ Cargar</button>
+      <button id="btn-export" title="Exportar JSON minificado">↓ Export (min)</button>
+      <button id="btn-export-pretty" title="Exportar JSON formateado">↓ Export (pretty)</button>
+      <span class="sep"></span>
+      <button id="btn-add-slide">+ Slide</button>
+      <button id="btn-add-choice">+ Choice</button>
+      <button id="btn-duplicate">⎘ Duplicar</button>
+      <button id="btn-delete">🗑 Borrar</button>
+      <a href="./index.html">← Biblioteca</a>
+      <input type="file" id="gen-file" accept=".json,application/json" style="display:none">
+    </div>
+
+    <div class="gen-main">
+      <aside class="gen-panel gen-panel-slides">
+        <div class="gen-panel-head">Capítulo</div>
+        <div class="gen-meta-list" id="gen-meta"></div>
+        <div class="gen-panel-head">Slides <span style="margin-left:auto;font-size:0.85em;color:var(--fg-dim);">drag para reordenar</span></div>
+        <div id="gen-slides"></div>
+      </aside>
+
+      <aside class="gen-panel gen-panel-editor">
+        <div class="gen-panel-head">Editor</div>
+        <div class="gen-editor" id="gen-editor"></div>
+      </aside>
+
+      <section class="gen-panel-preview gen-preview-host">
+        <div class="gen-preview-toolbar">
+          <button id="btn-preview-play" title="Reproducir desde aquí">▶ Play</button>
+        </div>
+        <div id="gen-preview"></div>
+      </section>
+    </div>
+
+    <div class="gen-status" id="gen-status"></div>
+  </div>
+
+  <script type="module" src="./js/pages/generator.js"></script>
+</body>
+</html>

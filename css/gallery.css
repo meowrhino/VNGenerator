@@ -1,0 +1,229 @@
+/* gallery.css — Biblioteca de novelas visuales.
+ * Estética: listado tipográfico tipo arXiv / GitHub repos, no carrusel de
+ * cards. Cada VN es una fila con metadatos compactos a la izquierda y
+ * thumbnail pequeño opcional a la derecha. */
+
+/* ===== Layout general ===== */
+#gallery-root {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--sp-8) var(--sp-5);
+}
+
+/* ===== Cabecera ===== */
+.g-head {
+  margin-bottom: var(--sp-6);
+  padding-bottom: var(--sp-5);
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: var(--sp-5);
+}
+.g-head h1 {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+.g-head h1::before {
+  content: '> ';
+  color: var(--accent);
+  font-weight: 400;
+}
+.g-head .g-subtitle {
+  color: var(--fg-dim);
+  margin: var(--sp-1) 0 0 0;
+  font-size: var(--fs-base);
+}
+.g-head nav {
+  display: flex;
+  gap: var(--sp-2);
+}
+.g-head nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: var(--fs-sm);
+  color: var(--fg);
+  font-weight: 500;
+}
+.g-head nav a:hover {
+  background: var(--bg-elev);
+  text-decoration: none;
+  border-color: var(--border-strong);
+}
+.g-head nav a.primary {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: transparent;
+}
+.g-head nav a.primary:hover {
+  background: color-mix(in srgb, var(--accent) 88%, black);
+}
+
+/* ===== Barra meta de la lista ===== */
+.g-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-3);
+  font-size: var(--fs-sm);
+  color: var(--fg-dim);
+  font-family: var(--font-mono);
+}
+.g-meta-bar .g-count strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+.g-meta-bar .g-sort {
+  display: flex;
+  gap: var(--sp-2);
+  align-items: center;
+}
+
+/* ===== Lista de VNs ===== */
+.g-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.g-row {
+  display: grid;
+  grid-template-columns: 96px 1fr auto;
+  gap: var(--sp-4);
+  padding: var(--sp-4);
+  border-bottom: 1px solid var(--border);
+  color: var(--fg);
+  align-items: center;
+  transition: background var(--tr-fast);
+}
+.g-row:last-child { border-bottom: none; }
+.g-row:hover {
+  background: var(--bg-elev);
+  text-decoration: none;
+}
+
+/* Thumbnail pequeño 16:9 */
+.g-thumb {
+  width: 96px;
+  height: 54px;
+  background: var(--bg-elev-2);
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.g-thumb-placeholder {
+  font-family: var(--font-mono);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--fg-muted);
+}
+
+/* Bloque central: título + metadata + descripción */
+.g-info { min-width: 0; }
+.g-info h2 {
+  margin: 0 0 var(--sp-1) 0;
+  font-size: var(--fs-md);
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.g-info-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  font-size: var(--fs-sm);
+  color: var(--fg-dim);
+  margin-bottom: var(--sp-1);
+  align-items: center;
+}
+.g-info-line .g-author { font-weight: 500; }
+.g-info-line .g-id {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--fg-muted);
+}
+.g-info p {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--fg-dim);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.g-tags { display: flex; flex-wrap: wrap; gap: var(--sp-1); margin-top: var(--sp-2); }
+.g-tags .badge { font-size: 10px; line-height: 16px; }
+
+/* Lateral derecho: contadores y entrada */
+.g-side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  align-items: flex-end;
+  font-size: var(--fs-xs);
+  color: var(--fg-muted);
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+.g-side .g-stat {
+  display: flex;
+  gap: var(--sp-1);
+  align-items: baseline;
+}
+.g-side .g-stat strong {
+  color: var(--fg);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+/* ===== Pie ===== */
+.g-foot {
+  margin-top: var(--sp-8);
+  padding-top: var(--sp-5);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--fg-muted);
+  font-size: var(--fs-sm);
+  font-family: var(--font-mono);
+}
+.g-foot a { color: var(--fg-dim); }
+
+/* ===== Empty state ===== */
+.g-empty {
+  padding: var(--sp-8);
+  text-align: center;
+  color: var(--fg-muted);
+  font-style: italic;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  #gallery-root { padding: var(--sp-4) var(--sp-3); }
+  .g-head { grid-template-columns: 1fr; }
+  .g-head nav { flex-wrap: wrap; }
+  .g-row {
+    grid-template-columns: 64px 1fr;
+    grid-template-rows: auto auto;
+  }
+  .g-thumb { width: 64px; height: 40px; }
+  .g-side { grid-column: 1 / -1; flex-direction: row; }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "vngenerator/v1",
+  "id": "cap-test-transitions",
+  "title": "Test: catálogo de transiciones",
+  "author": "Manu",
+  "description": "Una pasada por cada tipo de transición disponible.",
+  "defaults": {
+    "transition": { "type": "fade", "duration": 500 },
+    "textSpeed": 50
+  },
+  "assets": {
+    "images": "../demo/img/"
+  },
+  "slides": [
+    { "id": "intro", "text": { "body": "Test de transiciones — usa los siguientes slides para ver cada efecto." }, "transition": { "type": "fade", "duration": 400 } },
+    { "id": "t-instant", "layers": { "bg1": { "src": "bg-aula-dia.svg" } }, "text": { "body": "instant: sin animación" }, "transition": { "type": "instant" } },
+    { "id": "t-fade", "layers": { "bg1": { "src": "bg-aula-noche.svg" } }, "text": { "body": "fade: vía negro (effect 10 NScripter)" }, "transition": { "type": "fade", "duration": 600 } },
+    { "id": "t-fadewhite", "layers": { "bg1": { "src": "bg-aula-dia.svg" } }, "text": { "body": "fadeWhite: vía blanco (effect 11)" }, "transition": { "type": "fadeWhite", "duration": 600 } },
+    { "id": "t-crossfade", "layers": { "bg1": { "src": "bg-exterior.svg" } }, "text": { "body": "crossfade: cruzado simple (effect 2/3)" }, "transition": { "type": "crossfade", "duration": 600 } },
+    { "id": "t-wipe-left", "layers": { "bg1": { "src": "bg-aula-dia.svg" } }, "text": { "body": "wipe-left" }, "transition": { "type": "wipe-left", "duration": 700 } },
+    { "id": "t-wipe-right", "layers": { "bg1": { "src": "bg-aula-noche.svg" } }, "text": { "body": "wipe-right" }, "transition": { "type": "wipe-right", "duration": 700 } },
+    { "id": "t-wipe-up", "layers": { "bg1": { "src": "bg-exterior.svg" } }, "text": { "body": "wipe-up" }, "transition": { "type": "wipe-up", "duration": 700 } },
+    { "id": "t-wipe-down", "layers": { "bg1": { "src": "bg-aula-dia.svg" } }, "text": { "body": "wipe-down" }, "transition": { "type": "wipe-down", "duration": 700 } },
+    { "id": "t-dissolve", "layers": { "bg1": { "src": "bg-aula-noche.svg" } }, "text": { "body": "dissolve: máscara circular" }, "transition": { "type": "dissolve", "duration": 1000 } },
+    { "id": "t-pixelate", "layers": { "bg1": { "src": "bg-exterior.svg" } }, "text": { "body": "pixelate: blur in/out" }, "transition": { "type": "pixelate", "duration": 800 } },
+    { "id": "t-iris-in", "layers": { "bg1": { "src": "bg-aula-dia.svg" } }, "text": { "body": "iris-in: círculo abriéndose" }, "transition": { "type": "iris-in", "duration": 800 } },
+    { "id": "t-iris-out", "layers": { "bg1": { "src": "bg-aula-noche.svg" } }, "text": { "body": "iris-out: círculo cerrándose" }, "transition": { "type": "iris-out", "duration": 800 } },
+    { "id": "t-shake", "layers": { "bg1": { "src": "bg-exterior.svg" } }, "text": { "body": "shake: sacudida" }, "transition": { "type": "shake", "duration": 500 } },
+    { "id": "fin", "text": { "body": "Fin del catálogo." }, "transition": { "type": "fade", "duration": 600 } }
+  ]
+}

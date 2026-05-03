@@ -1,0 +1,175 @@
+{
+  "$schema": "vngenerator/v1",
+  "id": "cap-vars-demo",
+  "title": "Demo: variables, gosub, motion y formato",
+  "author": "Manu",
+  "description": "Capítulo que ejercita las features nuevas del motor: variables, condicionales en choices, gosub/return, wait inline, formato inline (bold/italic/color) y movimiento de sprites.",
+  "resolution": { "w": 1920, "h": 1080 },
+  "vars": {
+    "afinidad_ana": 0,
+    "afinidad_luis": 0,
+    "tiene_diario": false
+  },
+  "defaults": {
+    "transition": { "type": "fade", "duration": 400 },
+    "textSpeed": 35
+  },
+  "assets": {
+    "images": "../demo/img/",
+    "audio": "../demo/audio/"
+  },
+  "slides": [
+    {
+      "id": "intro",
+      "layers": { "bg1": { "src": "bg-aula-dia.svg" } },
+      "text": {
+        "body": "Demo técnica.[w:400] Aquí veremos las **features nuevas**: variables, condicionales, *gosub/return*, [c:#79c0ff]wait inline[/c] y movimiento."
+      },
+      "transition": { "type": "fadeWhite", "duration": 700 }
+    },
+    {
+      "id": "presentacion",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" },
+        "charLeft":   { "src": "char-ana-smile.svg",   "x": 0.25, "y": 0 },
+        "charRight":  { "src": "char-luis-neutral.svg","x": 0.75, "y": 0 }
+      },
+      "text": { "speaker": "Ana", "body": "Hola.[w:300] ¿Con quién quieres hablar primero?" },
+      "transition": {
+        "perLayer": {
+          "charLeft":  { "type": "slide-in", "from": "left",  "duration": 500 },
+          "charRight": { "type": "slide-in", "from": "right", "duration": 500 }
+        }
+      }
+    },
+    {
+      "id": "elige_personaje",
+      "choice": {
+        "prompt": "Elige a quién acercarte",
+        "options": [
+          {
+            "label": "→ Hablar con Ana (+afinidad_ana)",
+            "next": "habla_ana",
+            "vars": { "add": { "afinidad_ana": 1 } }
+          },
+          {
+            "label": "→ Hablar con Luis (+afinidad_luis)",
+            "next": "habla_luis",
+            "vars": { "add": { "afinidad_luis": 1 } }
+          },
+          {
+            "label": "→ Buscar el diario (requiere haber hablado con Ana)",
+            "next": "buscar_diario",
+            "condition": "afinidad_ana >= 1",
+            "vars": { "setFlag": "tiene_diario" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "habla_ana",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" },
+        "charLeft":   { "src": "char-ana-blush.svg",     "x": 0.4,  "y": 0, "scale": 1.05 },
+        "charRight":  { "src": "char-luis-neutral.svg",  "x": 0.85, "y": 0 }
+      },
+      "motion": {
+        "charLeft":  { "to": { "x": 0.4,  "scale": 1.05 }, "duration": 600 },
+        "charRight": { "to": { "x": 0.85 },                "duration": 600 }
+      },
+      "text": { "speaker": "Ana", "body": "M-me alegra que vinieras a verme.[w:600] *Se ruboriza*" },
+      "transition": {
+        "perLayer": {
+          "charLeft":  { "type": "crossfade", "duration": 350 }
+        }
+      },
+      "gosub": "sub_consejo"
+    },
+    {
+      "id": "tras_ana",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" },
+        "charLeft":   { "src": "char-ana-blush.svg",     "x": 0.4,  "y": 0 },
+        "charRight":  { "src": "char-luis-neutral.svg",  "x": 0.85, "y": 0 }
+      },
+      "text": { "body": "(Vuelvo del consejo.) Tu afinidad con Ana ahora es alta." },
+      "goto": "elige_personaje"
+    },
+
+    {
+      "id": "habla_luis",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" },
+        "charLeft":   { "src": "char-ana-smile.svg",     "x": 0.15, "y": 0 },
+        "charRight":  { "src": "char-luis-neutral.svg",  "x": 0.6,  "y": 0, "scale": 1.05 }
+      },
+      "motion": {
+        "charLeft":  { "to": { "x": 0.15 }, "duration": 600 },
+        "charRight": { "to": { "x": 0.6, "scale": 1.05 }, "duration": 600 }
+      },
+      "text": { "speaker": "Luis", "body": "Bien.[w:300] **Vamos al grano**: ¿qué quieres saber?" },
+      "transition": {
+        "perLayer": {
+          "charRight": { "type": "crossfade", "duration": 350 }
+        }
+      },
+      "gosub": "sub_consejo"
+    },
+    {
+      "id": "tras_luis",
+      "layers": {
+        "bg1": { "src": "bg-aula-dia.svg" },
+        "charLeft":   { "src": "char-ana-smile.svg",     "x": 0.15, "y": 0 },
+        "charRight":  { "src": "char-luis-neutral.svg",  "x": 0.6,  "y": 0 }
+      },
+      "text": { "body": "(Vuelvo del consejo.) Tu afinidad con Luis ahora es alta." },
+      "goto": "elige_personaje"
+    },
+
+    {
+      "id": "buscar_diario",
+      "layers": {
+        "bg1": { "src": "bg-aula-noche.svg" },
+        "overBg": { "src": "over-niebla.svg" }
+      },
+      "tag": "cg",
+      "text": { "body": "Encuentras el diario en el aula vacía.[w:800] [c:#ff6b9d]Una página marcada llama tu atención.[/c]" },
+      "transition": { "type": "dissolve", "duration": 900 },
+      "goto": "fin_diario"
+    },
+    {
+      "id": "fin_diario",
+      "layers": {
+        "bg1": { "src": "bg-aula-noche.svg" },
+        "overBg": { "src": "over-niebla.svg" }
+      },
+      "text": { "body": "Lees algo que cambia la historia... pero no te lo cuento.[w:600] [c:#79c0ff]FIN[/c]" },
+      "transition": { "type": "fade", "duration": 500 },
+      "goto": "fin"
+    },
+
+    {
+      "id": "sub_consejo",
+      "layers": {
+        "bg1": { "src": "bg-exterior.svg" }
+      },
+      "text": { "body": "*(Vas a recibir consejo de un mentor invisible. Esta escena es una **subrutina** reutilizada.)*" },
+      "transition": { "type": "wipe-left", "duration": 600 }
+    },
+    {
+      "id": "sub_consejo_2",
+      "layers": {
+        "bg1": { "src": "bg-exterior.svg" }
+      },
+      "text": { "body": "El mentor susurra:[w:400] [c:#79c0ff]\"Sigue tus instintos.\"[/c]" },
+      "return": true
+    },
+
+    {
+      "id": "fin",
+      "layers": {},
+      "text": { "body": "Fin de la demo técnica.[w:300] Pulsa **L** para ver el historial, **S** para guardar." },
+      "transition": { "type": "fade", "duration": 800 }
+    }
+  ]
+}

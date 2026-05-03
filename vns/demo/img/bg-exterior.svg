@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff9670"/>
+      <stop offset="0.45" stop-color="#ffc488"/>
+      <stop offset="0.85" stop-color="#ffe7c2"/>
+      <stop offset="1" stop-color="#fdebd2"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a8a3c"/>
+      <stop offset="1" stop-color="#2d4a1c"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6b487"/>
+      <stop offset="1" stop-color="#7a5a36"/>
+    </linearGradient>
+    <radialGradient id="sunHalo" cx="0.5" cy="0.45" r="0.32">
+      <stop offset="0" stop-color="#fff6d2" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff6d2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Cielo atardecer -->
+  <rect width="1920" height="780" fill="url(#sky)"/>
+  <!-- Nubes -->
+  <g fill="#fff" opacity="0.55">
+    <ellipse cx="320" cy="220" rx="160" ry="38"/>
+    <ellipse cx="380" cy="200" rx="100" ry="30"/>
+    <ellipse cx="1300" cy="160" rx="200" ry="44"/>
+    <ellipse cx="1380" cy="140" rx="120" ry="32"/>
+    <ellipse cx="1700" cy="320" rx="140" ry="32"/>
+  </g>
+  <!-- Sol bajo -->
+  <circle cx="960" cy="500" r="120" fill="#fff5d6"/>
+  <rect width="1920" height="780" fill="url(#sunHalo)"/>
+
+  <!-- Montañas lejos -->
+  <path d="M0 720 L240 540 L460 660 L740 480 L1020 640 L1280 510 L1540 660 L1920 540 L1920 780 L0 780 Z" fill="#564468" opacity="0.85"/>
+  <path d="M0 740 L300 620 L580 720 L860 600 L1140 720 L1440 620 L1700 740 L1920 660 L1920 780 L0 780 Z" fill="#3a2e4a" opacity="0.8"/>
+
+  <!-- Suelo -->
+  <rect y="780" width="1920" height="300" fill="url(#ground)"/>
+
+  <!-- Camino que cruza -->
+  <path d="M820 780 L1100 780 L1700 1080 L500 1080 Z" fill="url(#path)"/>
+
+  <!-- Árboles silueta -->
+  <g fill="#1c2a14">
+    <ellipse cx="180" cy="760" rx="120" ry="180"/>
+    <rect x="170" y="760" width="20" height="80"/>
+    <ellipse cx="1820" cy="760" rx="120" ry="200"/>
+    <rect x="1810" y="760" width="20" height="80"/>
+    <ellipse cx="320" cy="800" rx="80" ry="120"/>
+    <rect x="315" y="800" width="14" height="60"/>
+    <ellipse cx="1660" cy="800" rx="80" ry="120"/>
+    <rect x="1655" y="800" width="14" height="60"/>
+  </g>
+
+  <!-- Hierba -->
+  <g stroke="#1c2a14" stroke-width="2" opacity="0.6">
+    <line x1="60" y1="900" x2="55" y2="870"/>
+    <line x1="100" y1="950" x2="105" y2="920"/>
+    <line x1="200" y1="1010" x2="195" y2="980"/>
+    <line x1="1820" y1="900" x2="1830" y2="870"/>
+    <line x1="1750" y1="970" x2="1745" y2="940"/>
+    <line x1="1880" y1="1020" x2="1875" y2="990"/>
+  </g>
+
+  <!-- Vignette suave -->
+  <radialGradient id="vigExt" cx="0.5" cy="0.5" r="0.8">
+    <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.45"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vigExt)"/>
+</svg>

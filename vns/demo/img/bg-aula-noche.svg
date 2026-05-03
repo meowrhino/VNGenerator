@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wallNight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1f3a"/>
+      <stop offset="0.55" stop-color="#252b4a"/>
+      <stop offset="1" stop-color="#0e1226"/>
+    </linearGradient>
+    <linearGradient id="floorNight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d1830"/>
+      <stop offset="1" stop-color="#070512"/>
+    </linearGradient>
+    <linearGradient id="windowNight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e25"/>
+      <stop offset="1" stop-color="#1c2150"/>
+    </linearGradient>
+    <linearGradient id="deskNight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2f4a"/>
+      <stop offset="1" stop-color="#171025"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0.78" cy="0.28" r="0.35">
+      <stop offset="0" stop-color="#e6dcff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#e6dcff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#wallNight)"/>
+
+  <!-- Ventana nocturna -->
+  <g>
+    <rect x="1180" y="180" width="640" height="500" fill="url(#windowNight)" stroke="#0c0c1c" stroke-width="14"/>
+    <line x1="1500" y1="180" x2="1500" y2="680" stroke="#0c0c1c" stroke-width="10"/>
+    <line x1="1180" y1="430" x2="1820" y2="430" stroke="#0c0c1c" stroke-width="10"/>
+    <!-- Luna -->
+    <circle cx="1620" cy="320" r="80" fill="#f1ecff"/>
+    <circle cx="1640" cy="305" r="78" fill="#1a1f3a" opacity="0.6"/>
+    <!-- Estrellas -->
+    <g fill="#fff">
+      <circle cx="1240" cy="240" r="2.5"/>
+      <circle cx="1310" cy="290" r="1.8"/>
+      <circle cx="1380" cy="220" r="2.2"/>
+      <circle cx="1450" cy="350" r="1.5"/>
+      <circle cx="1330" cy="500" r="2"/>
+      <circle cx="1740" cy="450" r="2.4"/>
+      <circle cx="1800" cy="280" r="1.6"/>
+    </g>
+    <!-- Cortinas -->
+    <path d="M1180 180 L1140 200 L1170 360 L1200 360 Z" fill="#2c1f3a" opacity="0.9"/>
+    <path d="M1820 180 L1860 200 L1830 360 L1800 360 Z" fill="#2c1f3a" opacity="0.9"/>
+  </g>
+
+  <!-- Resplandor lunar entrando -->
+  <rect width="1920" height="1080" fill="url(#moonGlow)"/>
+
+  <!-- Pizarra (apenas visible) -->
+  <rect x="200" y="200" width="700" height="320" fill="#0d1810" stroke="#1a0d20" stroke-width="14"/>
+  <text x="550" y="380" font-family="Georgia, serif" font-size="78" font-style="italic" fill="#a8c0ff" text-anchor="middle" opacity="0.25">第一章</text>
+
+  <!-- Suelo -->
+  <rect x="0" y="780" width="1920" height="300" fill="url(#floorNight)"/>
+  <line x1="0" y1="780" x2="1920" y2="780" stroke="#000" stroke-width="4"/>
+
+  <!-- Pupitres -->
+  <g opacity="0.85">
+    <rect x="120" y="820" width="220" height="120" fill="url(#deskNight)" rx="4"/>
+    <rect x="140" y="940" width="20" height="100" fill="#0a0612"/>
+    <rect x="300" y="940" width="20" height="100" fill="#0a0612"/>
+
+    <rect x="500" y="850" width="220" height="120" fill="url(#deskNight)" rx="4"/>
+    <rect x="520" y="970" width="20" height="100" fill="#0a0612"/>
+    <rect x="680" y="970" width="20" height="100" fill="#0a0612"/>
+
+    <rect x="880" y="820" width="220" height="120" fill="url(#deskNight)" rx="4"/>
+    <rect x="900" y="940" width="20" height="100" fill="#0a0612"/>
+    <rect x="1060" y="940" width="20" height="100" fill="#0a0612"/>
+
+    <rect x="1280" y="850" width="220" height="120" fill="url(#deskNight)" rx="4"/>
+    <rect x="1300" y="970" width="20" height="100" fill="#0a0612"/>
+    <rect x="1460" y="970" width="20" height="100" fill="#0a0612"/>
+  </g>
+
+  <!-- Vignette intenso -->
+  <radialGradient id="vigNight" cx="0.5" cy="0.5" r="0.75">
+    <stop offset="0.5" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.7"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vigNight)"/>
+</svg>

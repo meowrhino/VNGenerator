@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="coverSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d2a4e"/>
+      <stop offset="0.45" stop-color="#a64368"/>
+      <stop offset="0.85" stop-color="#ff9670"/>
+      <stop offset="1" stop-color="#ffd6a8"/>
+    </linearGradient>
+    <radialGradient id="coverSun" cx="0.5" cy="0.85" r="0.45">
+      <stop offset="0" stop-color="#fff5d6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff5d6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coverDarken" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.5" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#coverSky)"/>
+
+  <!-- Estrellas en el cielo púrpura -->
+  <g fill="#fff" opacity="0.7">
+    <circle cx="160" cy="80" r="2"/>
+    <circle cx="240" cy="40" r="1.4"/>
+    <circle cx="320" cy="120" r="2.2"/>
+    <circle cx="500" cy="60" r="1.6"/>
+    <circle cx="640" cy="100" r="1.4"/>
+    <circle cx="780" cy="50" r="2"/>
+    <circle cx="940" cy="90" r="1.8"/>
+    <circle cx="1100" cy="40" r="1.5"/>
+    <circle cx="1260" cy="110" r="2.2"/>
+    <circle cx="1420" cy="60" r="1.6"/>
+  </g>
+
+  <!-- Sol bajo -->
+  <circle cx="800" cy="700" r="160" fill="#ffe5b8"/>
+  <rect width="1600" height="900" fill="url(#coverSun)"/>
+
+  <!-- Montañas siluetas -->
+  <path d="M0 620 L240 460 L480 580 L720 420 L960 580 L1200 440 L1440 580 L1600 480 L1600 900 L0 900 Z" fill="#3a2840" opacity="0.85"/>
+  <path d="M0 700 L300 600 L580 700 L860 580 L1140 700 L1440 600 L1600 660 L1600 900 L0 900 Z" fill="#1a1228" opacity="0.95"/>
+
+  <!-- Edificio escolar silueta central -->
+  <g fill="#0a0716">
+    <rect x="640" y="500" width="320" height="280"/>
+    <polygon points="640,500 800,420 960,500"/>
+    <rect x="700" y="560" width="40" height="60" fill="#ffb96a" opacity="0.6"/>
+    <rect x="760" y="560" width="40" height="60" fill="#ffb96a" opacity="0.4"/>
+    <rect x="820" y="560" width="40" height="60" fill="#ffb96a" opacity="0.7"/>
+    <rect x="700" y="650" width="40" height="60" fill="#ffb96a" opacity="0.5"/>
+    <rect x="760" y="650" width="40" height="60" fill="#ffb96a" opacity="0.3"/>
+    <rect x="820" y="650" width="40" height="60" fill="#ffb96a" opacity="0.6"/>
+  </g>
+
+  <!-- Árboles oscuros laterales -->
+  <g fill="#08050f">
+    <ellipse cx="120" cy="700" rx="120" ry="180"/>
+    <rect x="110" y="700" width="20" height="100"/>
+    <ellipse cx="1480" cy="700" rx="140" ry="200"/>
+    <rect x="1470" y="700" width="20" height="100"/>
+  </g>
+
+  <!-- Vignette inferior -->
+  <rect width="1600" height="900" fill="url(#coverDarken)"/>
+
+  <!-- Título -->
+  <g font-family="Georgia, serif" text-anchor="middle">
+    <text x="800" y="180" font-size="92" font-weight="900" fill="#fff" letter-spacing="6">DESPERTAR</text>
+    <text x="800" y="225" font-size="22" fill="#ffd6a8" letter-spacing="14">— CAPÍTULO 1 —</text>
+  </g>
+
+  <!-- Acento rosa abajo -->
+  <text x="800" y="850" font-family="system-ui, sans-serif" font-size="22" fill="#ff6b9d" text-anchor="middle" letter-spacing="3">VNGenerator demo</text>
+</svg>

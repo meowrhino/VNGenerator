@@ -1,0 +1,134 @@
+/* tokens.css — Variables de diseño globales del proyecto.
+ *
+ * Filosofía estética: arxiu/github.
+ *   - Tema CLARO por defecto, sobrio, casi monocromo.
+ *   - Tipografía sistema, monospace para metadatos e identificadores.
+ *   - Bordes finos, sin sombras llamativas, sin gradientes.
+ *   - Accent muy reducido (azul GitHub) que solo aparece en links e indicadores.
+ *
+ * El motor del lector (engine.css) sí usa fondo negro porque las VNs siempre
+ * se proyectan sobre escena oscura — la "interfaz" externa va clara.
+ *
+ * Si el usuario prefiere tema oscuro, basta con sobrescribir estas variables
+ * en `[data-theme="dark"]` o en `@media (prefers-color-scheme: dark)`.
+ */
+
+:root {
+  /* === Paleta clara (default) === */
+  --bg:           #ffffff;       /* fondo principal */
+  --bg-elev:     #f6f8fa;       /* paneles, cards */
+  --bg-elev-2:   #eaeef2;       /* hover, inputs */
+  --bg-code:     #f6f8fa;       /* bloques mono */
+
+  --fg:           #1f2328;       /* texto principal */
+  --fg-dim:       #59636e;       /* secundario */
+  --fg-muted:     #8b96a3;       /* deshabilitado */
+
+  --border:       #d1d9e0;       /* bordes finos */
+  --border-strong:#afb8c1;       /* bordes énfasis */
+
+  --accent:       #0969da;       /* azul GitHub para links/acciones */
+  --accent-fg:    #ffffff;       /* texto sobre accent */
+  --accent-soft:  #ddf4ff;       /* fondo de hint accent */
+
+  --danger:       #cf222e;       /* rojo GitHub */
+  --success:      #1a7f37;       /* verde GitHub */
+  --warning:      #9a6700;       /* mostaza */
+
+  /* === Tipografía === */
+  --font-sans:    -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+                  Helvetica, Arial, sans-serif;
+  --font-mono:    ui-monospace, SFMono-Regular, "SF Mono", Menlo,
+                  "Liberation Mono", Consolas, monospace;
+  --font-serif:   "Iowan Old Style", "Palatino Linotype", Palatino,
+                  "Source Serif Pro", Georgia, serif;
+
+  --fs-xs:    11px;
+  --fs-sm:    12px;
+  --fs-base:  14px;     /* GitHub usa 14px de base, no 16px */
+  --fs-md:    16px;
+  --fs-lg:    20px;
+  --fs-xl:    24px;
+  --fs-2xl:   32px;
+
+  --lh-tight:   1.25;
+  --lh-base:    1.5;
+  --lh-loose:   1.7;
+
+  /* === Espaciado === */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-8: 48px;
+  --sp-10: 64px;
+
+  /* === Radio === */
+  --radius:     6px;     /* GitHub usa 6 px en cards y botones */
+  --radius-sm:  3px;
+  --radius-pill: 999px;
+
+  /* === Sombras (mínimas) === */
+  --shadow-1: 0 1px 0 rgba(31, 35, 40, 0.04);
+  --shadow-2: 0 3px 6px rgba(31, 35, 40, 0.08);
+  --shadow-modal: 0 8px 24px rgba(31, 35, 40, 0.12);
+
+  /* === Animación === */
+  --tr-fast: 100ms;
+  --tr-base: 180ms;
+  --tr-slow: 300ms;
+}
+
+/* Tema oscuro automático según preferencia del SO. La interfaz "externa"
+ * (gallery, editor) puede beneficiarse de modo oscuro; el lector siempre
+ * usa fondo negro independientemente del tema. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:           #0d1117;
+    --bg-elev:     #151b23;
+    --bg-elev-2:   #212830;
+    --bg-code:     #151b23;
+
+    --fg:           #f0f6fc;
+    --fg-dim:       #9198a1;
+    --fg-muted:     #6c737c;
+
+    --border:       #3d444d;
+    --border-strong:#4a5460;
+
+    --accent:       #4493f8;
+    --accent-fg:    #ffffff;
+    --accent-soft:  #1f6feb1a;
+
+    --shadow-1: 0 1px 0 rgba(0, 0, 0, 0.3);
+    --shadow-2: 0 3px 6px rgba(0, 0, 0, 0.4);
+    --shadow-modal: 0 8px 24px rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* Permitir forzar tema con [data-theme="..."] en <html> */
+html[data-theme="dark"] {
+  --bg:           #0d1117;
+  --bg-elev:     #151b23;
+  --bg-elev-2:   #212830;
+  --bg-code:     #151b23;
+  --fg:           #f0f6fc;
+  --fg-dim:       #9198a1;
+  --fg-muted:     #6c737c;
+  --border:       #3d444d;
+  --border-strong:#4a5460;
+  --accent:       #4493f8;
+  --accent-soft:  #1f6feb1a;
+}
+
+html[data-theme="light"] {
+  --bg:           #ffffff;
+  --bg-elev:     #f6f8fa;
+  --bg-elev-2:   #eaeef2;
+  --fg:           #1f2328;
+  --fg-dim:       #59636e;
+  --border:       #d1d9e0;
+  --accent:       #0969da;
+}

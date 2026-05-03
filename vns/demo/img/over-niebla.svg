@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="nieblaA" cx="0.2" cy="0.7" r="0.45">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nieblaB" cx="0.7" cy="0.55" r="0.4">
+      <stop offset="0" stop-color="#e0e8f0" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#e0e8f0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nieblaC" cx="0.5" cy="0.85" r="0.55">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nieblaD" cx="0.85" cy="0.2" r="0.3">
+      <stop offset="0" stop-color="#d8e0e8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#d8e0e8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurNiebla">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <!-- Nubes de niebla a distintas alturas -->
+  <g filter="url(#blurNiebla)">
+    <ellipse cx="380" cy="780" rx="520" ry="180" fill="url(#nieblaA)"/>
+    <ellipse cx="1340" cy="600" rx="600" ry="200" fill="url(#nieblaB)"/>
+    <ellipse cx="960" cy="940" rx="900" ry="220" fill="url(#nieblaC)"/>
+    <ellipse cx="1640" cy="220" rx="380" ry="140" fill="url(#nieblaD)"/>
+    <ellipse cx="220" cy="320" rx="320" ry="120" fill="url(#nieblaD)"/>
+    <ellipse cx="800" cy="500" rx="380" ry="120" fill="url(#nieblaA)" opacity="0.6"/>
+  </g>
+
+  <!-- Capa fina general que tinta -->
+  <rect width="1920" height="1080" fill="#cfd6df" opacity="0.08"/>
+</svg>

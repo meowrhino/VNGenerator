@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1080" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <linearGradient id="hairAnaB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a3a24"/>
+      <stop offset="0.5" stop-color="#7a4d2e"/>
+      <stop offset="1" stop-color="#3a2418"/>
+    </linearGradient>
+    <linearGradient id="uniformAnaB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3e4a78"/>
+      <stop offset="1" stop-color="#1f2748"/>
+    </linearGradient>
+    <linearGradient id="skinAnaB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde2cc"/>
+      <stop offset="1" stop-color="#f0c8a8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Falda -->
+  <path d="M180 880 L420 880 L460 1080 L140 1080 Z" fill="#9c2c46"/>
+  <g stroke="#5e1a2a" stroke-width="2" opacity="0.7">
+    <line x1="220" y1="880" x2="200" y2="1080"/>
+    <line x1="260" y1="880" x2="260" y2="1080"/>
+    <line x1="300" y1="880" x2="300" y2="1080"/>
+    <line x1="340" y1="880" x2="340" y2="1080"/>
+    <line x1="380" y1="880" x2="400" y2="1080"/>
+  </g>
+
+  <!-- Torso -->
+  <path d="M200 620 L400 620 L420 900 L180 900 Z" fill="url(#uniformAnaB)"/>
+  <path d="M250 620 L350 620 L370 720 L300 760 L230 720 Z" fill="#f4f4f8"/>
+  <path d="M260 620 L340 620 L360 700 L300 740 L240 700 Z" fill="url(#uniformAnaB)"/>
+  <path d="M270 700 L330 700 L340 740 L300 730 L260 740 Z" fill="#c12a3c"/>
+  <circle cx="300" cy="715" r="6" fill="#7a1a26"/>
+
+  <!-- Brazos (uno hacia la cara, gesto tímido) -->
+  <path d="M195 640 L150 880 L185 890 L235 660 Z" fill="url(#uniformAnaB)"/>
+  <path d="M405 640 L390 720 L350 540 L380 530 Z" fill="url(#uniformAnaB)"/>
+  <ellipse cx="167" cy="888" rx="22" ry="26" fill="url(#skinAnaB)"/>
+  <!-- Mano cerca de la cara -->
+  <ellipse cx="365" cy="525" rx="26" ry="22" fill="url(#skinAnaB)"/>
+
+  <!-- Cuello -->
+  <rect x="278" y="555" width="44" height="80" fill="url(#skinAnaB)"/>
+
+  <!-- Cara -->
+  <ellipse cx="300" cy="475" rx="115" ry="135" fill="url(#skinAnaB)"/>
+
+  <!-- Rubor INTENSO (rasgo distintivo) -->
+  <ellipse cx="235" cy="510" rx="38" ry="22" fill="#ff8a9a" opacity="0.7"/>
+  <ellipse cx="365" cy="510" rx="38" ry="22" fill="#ff8a9a" opacity="0.7"/>
+  <!-- Rayitas de rubor estilo manga -->
+  <g stroke="#d04a5e" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <line x1="210" y1="498" x2="220" y2="498"/>
+    <line x1="225" y1="492" x2="235" y2="492"/>
+    <line x1="240" y1="498" x2="250" y2="498"/>
+    <line x1="350" y1="498" x2="360" y2="498"/>
+    <line x1="365" y1="492" x2="375" y2="492"/>
+    <line x1="380" y1="498" x2="390" y2="498"/>
+  </g>
+
+  <!-- Pelo trasero -->
+  <path d="M180 380 Q160 600 220 720 L180 740 Q120 580 160 360 Z" fill="url(#hairAnaB)"/>
+  <path d="M420 380 Q440 600 380 720 L420 740 Q480 580 440 360 Z" fill="url(#hairAnaB)"/>
+  <!-- Flequillo -->
+  <path d="M195 360 Q200 480 240 460 Q260 420 250 380 Q300 360 350 380 Q340 420 360 460 Q400 480 405 360 Q380 280 300 270 Q220 280 195 360 Z" fill="url(#hairAnaB)"/>
+  <path d="M198 440 Q175 540 195 600 Q210 540 215 460 Z" fill="url(#hairAnaB)"/>
+  <path d="M402 440 Q425 540 405 600 Q390 540 385 460 Z" fill="url(#hairAnaB)"/>
+
+  <!-- Ojos abiertos pero mirando abajo (avergonzada) -->
+  <ellipse cx="255" cy="475" rx="20" ry="22" fill="#fff"/>
+  <ellipse cx="345" cy="475" rx="20" ry="22" fill="#fff"/>
+  <!-- Iris baja -->
+  <ellipse cx="255" cy="488" rx="14" ry="14" fill="#5a3a24"/>
+  <ellipse cx="345" cy="488" rx="14" ry="14" fill="#5a3a24"/>
+  <!-- Pupilas -->
+  <ellipse cx="255" cy="490" rx="6" ry="8" fill="#1a0e08"/>
+  <ellipse cx="345" cy="490" rx="6" ry="8" fill="#1a0e08"/>
+  <!-- Brillos -->
+  <circle cx="262" cy="482" r="3" fill="#fff"/>
+  <circle cx="352" cy="482" r="3" fill="#fff"/>
+  <!-- Pestañas superiores marcadas -->
+  <path d="M236 470 Q255 460 275 470" stroke="#1a0e08" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M326 470 Q345 460 365 470" stroke="#1a0e08" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Cejas inclinadas (vergüenza) -->
+  <path d="M240 442 Q258 446 278 438" stroke="#3a2818" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M322 438 Q340 446 360 442" stroke="#3a2818" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Nariz -->
+  <path d="M298 510 Q302 525 308 530" stroke="#c89878" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Boca pequeña en "o" -->
+  <ellipse cx="300" cy="555" rx="8" ry="12" fill="#a04050"/>
+  <ellipse cx="300" cy="555" rx="5" ry="8" fill="#6a2030"/>
+
+  <!-- Brillo pelo -->
+  <path d="M250 320 Q300 305 350 320 L340 360 Q300 350 260 360 Z" fill="#c08a5c" opacity="0.5"/>
+</svg>

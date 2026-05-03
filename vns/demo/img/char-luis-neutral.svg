@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1080" preserveAspectRatio="xMidYMax meet">
+  <defs>
+    <linearGradient id="hairLuis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1814"/>
+      <stop offset="0.5" stop-color="#2a261e"/>
+      <stop offset="1" stop-color="#0a0806"/>
+    </linearGradient>
+    <linearGradient id="uniformLuis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#23283c"/>
+      <stop offset="1" stop-color="#0e111c"/>
+    </linearGradient>
+    <linearGradient id="skinLuis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6d2b4"/>
+      <stop offset="1" stop-color="#d8a880"/>
+    </linearGradient>
+    <linearGradient id="pantsLuis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f2436"/>
+      <stop offset="1" stop-color="#0a0c14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Pantalones -->
+  <path d="M210 880 L290 880 L300 1080 L200 1080 Z" fill="url(#pantsLuis)"/>
+  <path d="M310 880 L390 880 L400 1080 L300 1080 Z" fill="url(#pantsLuis)"/>
+  <line x1="300" y1="880" x2="300" y2="1080" stroke="#000" stroke-width="2" opacity="0.5"/>
+
+  <!-- Chaqueta uniforme -->
+  <path d="M180 620 L420 620 L430 900 L170 900 Z" fill="url(#uniformLuis)"/>
+  <!-- Solapa -->
+  <path d="M260 620 L300 760 L340 620 Z" fill="#0e111c"/>
+  <!-- Botones -->
+  <circle cx="300" cy="700" r="6" fill="#c0a060"/>
+  <circle cx="300" cy="760" r="6" fill="#c0a060"/>
+  <circle cx="300" cy="820" r="6" fill="#c0a060"/>
+  <!-- Camisa blanca cuello -->
+  <path d="M270 620 L330 620 L320 660 L300 670 L280 660 Z" fill="#f4f4f8"/>
+  <!-- Corbata -->
+  <path d="M290 660 L310 660 L315 720 L300 740 L285 720 Z" fill="#5a3a3a"/>
+  <line x1="290" y1="680" x2="310" y2="680" stroke="#3a2424" stroke-width="2"/>
+
+  <!-- Brazos a los lados -->
+  <path d="M180 640 L155 880 L195 890 L220 660 Z" fill="url(#uniformLuis)"/>
+  <path d="M420 640 L445 880 L405 890 L380 660 Z" fill="url(#uniformLuis)"/>
+  <ellipse cx="175" cy="888" rx="22" ry="26" fill="url(#skinLuis)"/>
+  <ellipse cx="425" cy="888" rx="22" ry="26" fill="url(#skinLuis)"/>
+
+  <!-- Cuello -->
+  <rect x="282" y="555" width="36" height="80" fill="url(#skinLuis)"/>
+
+  <!-- Cara -->
+  <ellipse cx="300" cy="475" rx="110" ry="135" fill="url(#skinLuis)"/>
+
+  <!-- Mandíbula angular (chico) -->
+  <path d="M195 510 Q200 580 250 600 L300 605 L350 600 Q400 580 405 510" fill="url(#skinLuis)"/>
+
+  <!-- Pelo trasero corto -->
+  <path d="M188 360 Q182 480 220 520 L210 540 Q160 480 168 350 Z" fill="url(#hairLuis)"/>
+  <path d="M412 360 Q418 480 380 520 L390 540 Q440 480 432 350 Z" fill="url(#hairLuis)"/>
+  <!-- Pelo principal: corto, despeinado -->
+  <path d="M195 380 Q200 320 240 300 Q260 285 300 280 Q340 285 360 300 Q400 320 405 380 Q400 410 380 425 Q360 410 340 420 Q320 405 300 415 Q280 405 260 420 Q240 410 220 425 Q200 410 195 380 Z" fill="url(#hairLuis)"/>
+  <!-- Mechón sobre frente -->
+  <path d="M260 320 Q280 350 270 400 Q250 380 245 350 Z" fill="url(#hairLuis)"/>
+  <path d="M340 320 Q320 350 330 400 Q350 380 355 350 Z" fill="url(#hairLuis)"/>
+
+  <!-- Ojos serios, alargados -->
+  <ellipse cx="255" cy="478" rx="22" ry="14" fill="#fff"/>
+  <ellipse cx="345" cy="478" rx="22" ry="14" fill="#fff"/>
+  <ellipse cx="255" cy="478" rx="12" ry="13" fill="#3a2a18"/>
+  <ellipse cx="345" cy="478" rx="12" ry="13" fill="#3a2a18"/>
+  <ellipse cx="255" cy="480" rx="5" ry="8" fill="#0a0604"/>
+  <ellipse cx="345" cy="480" rx="5" ry="8" fill="#0a0604"/>
+  <circle cx="261" cy="473" r="2.5" fill="#fff"/>
+  <circle cx="351" cy="473" r="2.5" fill="#fff"/>
+
+  <!-- Pestañas/línea ojo -->
+  <path d="M233 470 L277 470" stroke="#0a0604" stroke-width="4" stroke-linecap="round"/>
+  <path d="M323 470 L367 470" stroke="#0a0604" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Cejas rectas, marcadas -->
+  <path d="M232 440 L282 442" stroke="#1a1408" stroke-width="6" stroke-linecap="round"/>
+  <path d="M318 442 L368 440" stroke="#1a1408" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Nariz -->
+  <path d="M298 505 L292 540 L300 545 L308 540" stroke="#a87a5a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Boca neutra (línea recta) -->
+  <line x1="282" y1="565" x2="318" y2="565" stroke="#6a3838" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Sombra mandíbula -->
+  <path d="M205 530 Q220 580 250 590" stroke="#c89878" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M395 530 Q380 580 350 590" stroke="#c89878" stroke-width="2" fill="none" opacity="0.5"/>
+</svg>
