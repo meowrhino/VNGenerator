@@ -14,24 +14,29 @@ Leandro Fernández de Moratín (dominio público), con estética *sound novel* t
 **▶ Jugar online: https://meowrhino.github.io/VNGenerator/** (entra en «Hamlet»)
 
 - **1233 slides**, 5 actos íntegros · **11 fondos** + **14 personajes** generados con IA
-- Skin propio (`css/theme-umineko.css`, se activa con `chapter.theme: "umineko"`), tarjetas
-  de acto/escena, colocación de varios personajes y resaltado del que habla
-- **Motor de expresiones** y **cues de audio** ya cableados en *drop-in*: sueltas la cara
-  (`vns/hamlet/img/<personaje>/<expresión>.png`) o el tema (`vns/hamlet/audio/<mood>.mp3`)
-  y aparece/suena solo donde toca
+- Skin propio (`css/theme-umineko.css`, `chapter.theme: "umineko"`), tarjetas de acto/escena,
+  colocación de hasta 3 personajes y **resaltado del que habla** (siempre visible)
+- **Música procedural** por escena (placeholder, sustituible) + transiciones dramáticas
+- Motores de **expresiones** y **audio** en *drop-in*: sueltas la cara
+  (`img/<personaje>/<expresión>.png`) o el tema (`audio/<mood>.ogg`) y aparece/suena solo
 
 Pipeline (`vns/hamlet/`):
 
 ```
-build/build.py    # texto de Moratín -> chapter.json (parser + montaje)
-build/cutout.py   # recorta el fondo gris de un sprite -> PNG alpha
-build/place.py    # coloca lo de img/_incoming/ y reconstruye
-source/           # texto extraído del PDF
-PROMPTS-*.txt     # prompts para generar personajes, expresiones y música
-ART.md · TODO.md  # guía de arte y estado del proyecto
+build/build.py    # texto de Moratín -> chapter.json (parser + montaje de escenas)
+build/cutout.py   # recorta el fondo gris de un sprite -> PNG con alpha
+build/place.py    # coloca lo de img/_incoming/ (fondos y personajes) y reconstruye
+build/synth.py    # música procedural placeholder -> audio/*.ogg
+source/           # texto del PDF · ART.md · TODO.md · PROMPTS-*.txt (prompts de IA)
 ```
 
-Para regenerar el capítulo tras añadir/parsear texto: `python3 vns/hamlet/build/build.py`.
+**Añadir arte/audio (drop-in):** genera la imagen/pista → colócala con el nombre que toca
+(`img/<personaje>/neutral.png`, `img/fondos/<lugar>.png`, `audio/<mood>.ogg`…) → corre
+`python3 vns/hamlet/build/build.py`. Lo que falte se queda en su estado anterior (texto,
+neutral o silencio). Prompts listos en los `PROMPTS-*.txt`.
+
+Estado: **base completa y publicada**. Pendiente (opcional): caras de expresión, música
+definitiva, CGs. Ver `vns/hamlet/TODO.md`.
 
 ---
 
