@@ -89,7 +89,10 @@
    "_present": [
     "FRANCISCO",
     "BERNARDO"
-   ]
+   ],
+   "audio": {
+    "bgm": "tension.ogg"
+   }
   },
   {
    "id": "a1_s1_001",
@@ -345,7 +348,10 @@
    "_present": [
     "HORACIO",
     "MARCELO"
-   ]
+   ],
+   "audio": {
+    "bgm": "tension.ogg"
+   }
   },
   {
    "id": "a1_s2_001",
@@ -1809,7 +1815,10 @@
     "POLONIO",
     "LAERTES",
     "VOLTIMAN"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a1_s3_001",
@@ -1893,7 +1902,10 @@
     "HAMLET",
     "POLONIO",
     "LAERTES"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a1_s4_001",
@@ -1933,6 +1945,7 @@
    },
    "transition": null,
    "_speaker": "LAERTES",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -1942,14 +1955,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "gertrudis/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "laertes/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -1992,6 +2005,7 @@
    },
    "transition": null,
    "_speaker": "POLONIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -2001,14 +2015,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "gertrudis/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "polonio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -2390,7 +2404,10 @@
    },
    "_scene": "1.5",
    "_location": "salon-trono",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a1_s5_001",
@@ -2434,7 +2451,10 @@
     "HORACIO",
     "BERNARDO",
     "MARCELO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a1_s6_001",
@@ -4132,7 +4152,10 @@
    "_present": [
     "LAERTES",
     "OFELIA"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a1_s7_001",
@@ -4330,7 +4353,10 @@
     "POLONIO",
     "LAERTES",
     "OFELIA"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a1_s8_001",
@@ -4532,7 +4558,10 @@
    "_present": [
     "POLONIO",
     "OFELIA"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a1_s9_001",
@@ -4855,7 +4884,10 @@
     "HAMLET",
     "HORACIO",
     "MARCELO"
-   ]
+   ],
+   "audio": {
+    "bgm": "tension.ogg"
+   }
   },
   {
    "id": "a1_s10_001",
@@ -5567,7 +5599,10 @@
    "_present": [
     "HORACIO",
     "MARCELO"
-   ]
+   ],
+   "audio": {
+    "bgm": "tension.ogg"
+   }
   },
   {
    "id": "a1_s11_001",
@@ -5738,7 +5773,10 @@
    "_location": "costa",
    "_present": [
     "HAMLET"
-   ]
+   ],
+   "audio": {
+    "bgm": "espectro.ogg"
+   }
   },
   {
    "id": "a1_s12_001",
@@ -6210,7 +6248,10 @@
    "_present": [
     "HAMLET",
     "MARCELO"
-   ]
+   ],
+   "audio": {
+    "bgm": "espectro.ogg"
+   }
   },
   {
    "id": "a1_s13_001",
@@ -7178,6 +7219,7 @@
    },
    "transition": null,
    "_speaker": "LA SOMBRA",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/costa.png"
@@ -7187,14 +7229,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "horacio/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "marcelo/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "la-sombra/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -7297,6 +7339,7 @@
    },
    "transition": null,
    "_speaker": "LA SOMBRA",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/costa.png"
@@ -7306,14 +7349,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "horacio/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "marcelo/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "la-sombra/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -7356,6 +7399,7 @@
    },
    "transition": null,
    "_speaker": "LA SOMBRA",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/costa.png"
@@ -7365,14 +7409,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "horacio/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "marcelo/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "la-sombra/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -7475,6 +7519,7 @@
    },
    "transition": null,
    "_speaker": "LA SOMBRA",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/costa.png"
@@ -7484,14 +7529,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "horacio/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "marcelo/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "la-sombra/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -7558,7 +7603,10 @@
    "_present": [
     "POLONIO",
     "REYNALDO"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a2_s1_001",
@@ -8104,7 +8152,10 @@
    },
    "_scene": "2.2",
    "_location": "casa-polonio",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a2_s2_001",
@@ -8403,7 +8454,10 @@
     "GERTRUDIS",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a2_s3_001",
@@ -8473,6 +8527,7 @@
    },
    "transition": null,
    "_speaker": "RICARDO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -8482,14 +8537,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "gertrudis/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "guillermo/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "ricardo/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -8665,7 +8720,10 @@
     "CLAUDIO",
     "GERTRUDIS",
     "POLONIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a2_s4_001",
@@ -8929,7 +8987,10 @@
     "GERTRUDIS",
     "POLONIO",
     "VOLTIMAN"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a2_s5_001",
@@ -9011,7 +9072,10 @@
     "CLAUDIO",
     "GERTRUDIS",
     "POLONIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a2_s6_001",
@@ -9663,7 +9727,10 @@
    "_present": [
     "POLONIO",
     "HAMLET"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a2_s7_001",
@@ -10311,7 +10378,10 @@
     "HAMLET",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a2_s8_001",
@@ -12101,7 +12171,10 @@
    "_location": "salon-trono",
    "_present": [
     "POLONIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a2_s9_001",
@@ -12724,7 +12797,10 @@
     "HAMLET",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a2_s10_001",
@@ -13369,7 +13445,10 @@
    },
    "_scene": "2.11",
    "_location": "salon-trono",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a2_s11_001",
@@ -13427,7 +13506,10 @@
     "OFELIA",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a3_s1_001",
@@ -13527,6 +13609,7 @@
    },
    "transition": null,
    "_speaker": "GERTRUDIS",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/galeria.png"
@@ -13536,14 +13619,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "ricardo/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "guillermo/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "gertrudis/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -13646,6 +13729,7 @@
    },
    "transition": null,
    "_speaker": "GERTRUDIS",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/galeria.png"
@@ -13655,14 +13739,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "ricardo/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "guillermo/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "gertrudis/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -13705,6 +13789,7 @@
    },
    "transition": null,
    "_speaker": "POLONIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/galeria.png"
@@ -13714,14 +13799,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "ricardo/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "guillermo/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "polonio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -13808,7 +13893,10 @@
     "GERTRUDIS",
     "POLONIO",
     "OFELIA"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a3_s2_001",
@@ -13921,7 +14009,10 @@
     "CLAUDIO",
     "POLONIO",
     "OFELIA"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a3_s3_001",
@@ -14018,7 +14109,10 @@
    "_present": [
     "HAMLET",
     "OFELIA"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a3_s4_001",
@@ -14612,7 +14706,10 @@
    },
    "_scene": "3.5",
    "_location": "galeria",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a3_s5_001",
@@ -14655,7 +14752,10 @@
     "CLAUDIO",
     "POLONIO",
     "OFELIA"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a3_s6_001",
@@ -14727,7 +14827,10 @@
    "_present": [
     "CLAUDIO",
     "POLONIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a3_s7_001",
@@ -14796,7 +14899,10 @@
    },
    "_scene": "3.8",
    "_location": "salon-trono",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s8_001",
@@ -14899,7 +15005,10 @@
     "POLONIO",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s9_001",
@@ -15041,7 +15150,10 @@
    "_present": [
     "HAMLET",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s10_001",
@@ -15244,7 +15356,10 @@
     "OFELIA",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s11_001",
@@ -15254,6 +15369,7 @@
    },
    "transition": null,
    "_speaker": "CLAUDIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -15263,14 +15379,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "polonio/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "ofelia/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "claudio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -15313,6 +15429,7 @@
    },
    "transition": null,
    "_speaker": "CLAUDIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -15322,14 +15439,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "polonio/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "ofelia/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "claudio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -15492,6 +15609,7 @@
    },
    "transition": null,
    "_speaker": "RICARDO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -15501,14 +15619,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "polonio/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "ofelia/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "ricardo/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -15521,6 +15639,7 @@
    },
    "transition": null,
    "_speaker": "GERTRUDIS",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -15530,14 +15649,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "polonio/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "ofelia/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "gertrudis/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -16159,7 +16278,10 @@
    },
    "_scene": "3.12",
    "_location": "salon-trono",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s12_001",
@@ -16401,7 +16523,10 @@
    },
    "_scene": "3.13",
    "_location": "salon-trono",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s13_001",
@@ -16893,7 +17018,10 @@
    },
    "_scene": "3.14",
    "_location": "salon-trono",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s14_001",
@@ -17291,6 +17419,7 @@
    },
    "transition": null,
    "_speaker": "POLONIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -17300,14 +17429,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "ofelia/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "gertrudis/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "polonio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -17320,6 +17449,7 @@
    },
    "transition": null,
    "_speaker": "CLAUDIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -17329,14 +17459,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "ofelia/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "gertrudis/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "claudio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -17390,7 +17520,10 @@
    "_present": [
     "HAMLET",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s15_001",
@@ -17639,7 +17772,10 @@
     "HORACIO",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s16_001",
@@ -18438,7 +18574,10 @@
    },
    "_scene": "3.17",
    "_location": "salon-trono",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s17_001",
@@ -18758,7 +18897,10 @@
    "_location": "salon-trono",
    "_present": [
     "POLONIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s18_001",
@@ -19052,7 +19194,10 @@
    },
    "_scene": "3.19",
    "_location": "salon-trono",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s19_001",
@@ -19095,7 +19240,10 @@
     "CLAUDIO",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s20_001",
@@ -19266,7 +19414,10 @@
    "_present": [
     "CLAUDIO",
     "POLONIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s21_001",
@@ -19335,7 +19486,10 @@
    },
    "_scene": "3.22",
    "_location": "gabinete",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s22_001",
@@ -19377,7 +19531,10 @@
    "_present": [
     "CLAUDIO",
     "HAMLET"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s23_001",
@@ -19416,7 +19573,10 @@
    },
    "_scene": "3.24",
    "_location": "gabinete",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a3_s24_001",
@@ -19459,7 +19619,10 @@
     "GERTRUDIS",
     "POLONIO",
     "HAMLET"
-   ]
+   ],
+   "audio": {
+    "bgm": "tension.ogg"
+   }
   },
   {
    "id": "a3_s25_001",
@@ -19572,7 +19735,10 @@
     "GERTRUDIS",
     "HAMLET",
     "POLONIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "tension.ogg"
+   }
   },
   {
    "id": "a3_s26_001",
@@ -20494,7 +20660,10 @@
    "_present": [
     "GERTRUDIS",
     "HAMLET"
-   ]
+   ],
+   "audio": {
+    "bgm": "tension.ogg"
+   }
   },
   {
    "id": "a3_s27_001",
@@ -20906,7 +21075,10 @@
    "_present": [
     "GERTRUDIS",
     "HAMLET"
-   ]
+   ],
+   "audio": {
+    "bgm": "tension.ogg"
+   }
   },
   {
    "id": "a3_s28_001",
@@ -21192,7 +21364,10 @@
     "GERTRUDIS",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a4_s1_001",
@@ -21391,7 +21566,10 @@
     "GERTRUDIS",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a4_s2_001",
@@ -21434,7 +21612,10 @@
     "HAMLET",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a4_s3_001",
@@ -21963,7 +22144,10 @@
    },
    "_scene": "4.4",
    "_location": "salon-trono",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a4_s4_001",
@@ -22005,7 +22189,10 @@
    "_present": [
     "CLAUDIO",
     "RICARDO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a4_s5_001",
@@ -22179,7 +22366,10 @@
     "RICARDO",
     "HAMLET",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a4_s6_001",
@@ -22702,7 +22892,10 @@
     "CLAUDIO",
     "RICARDO",
     "GUILLERMO"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a4_s7_001",
@@ -22743,7 +22936,10 @@
    "_location": "campo",
    "_present": [
     "FORTIMBRÁS"
-   ]
+   ],
+   "audio": {
+    "bgm": "marcha.ogg"
+   }
   },
   {
    "id": "a4_s8_001",
@@ -22806,7 +23002,10 @@
    "_location": "campo",
    "_present": [
     "HAMLET"
-   ]
+   ],
+   "audio": {
+    "bgm": "marcha.ogg"
+   }
   },
   {
    "id": "a4_s9_001",
@@ -23169,7 +23368,10 @@
    },
    "_scene": "4.10",
    "_location": "campo",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "marcha.ogg"
+   }
   },
   {
    "id": "a4_s10_001",
@@ -23211,7 +23413,10 @@
    "_present": [
     "GERTRUDIS",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a4_s11_001",
@@ -23359,7 +23564,10 @@
     "GERTRUDIS",
     "OFELIA",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "ofelia.ogg"
+   }
   },
   {
    "id": "a4_s12_001",
@@ -23558,7 +23766,10 @@
     "GERTRUDIS",
     "OFELIA",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "ofelia.ogg"
+   }
   },
   {
    "id": "a4_s13_001",
@@ -23910,7 +24121,10 @@
    "_present": [
     "CLAUDIO",
     "GERTRUDIS"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a4_s14_001",
@@ -23982,7 +24196,10 @@
    "_present": [
     "CLAUDIO",
     "GERTRUDIS"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a4_s15_001",
@@ -24104,7 +24321,10 @@
     "LAERTES",
     "CLAUDIO",
     "GERTRUDIS"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a4_s16_001",
@@ -24785,7 +25005,10 @@
     "GERTRUDIS",
     "LAERTES",
     "OFELIA"
-   ]
+   ],
+   "audio": {
+    "bgm": "ofelia.ogg"
+   }
   },
   {
    "id": "a4_s17_001",
@@ -25058,7 +25281,10 @@
     "CLAUDIO",
     "GERTRUDIS",
     "LAERTES"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a4_s18_001",
@@ -25179,7 +25405,10 @@
    "_location": "casa-horacio",
    "_present": [
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a4_s19_001",
@@ -25259,7 +25488,10 @@
    "_location": "casa-horacio",
    "_present": [
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "principal.ogg"
+   }
   },
   {
    "id": "a4_s20_001",
@@ -25359,7 +25591,10 @@
    "_present": [
     "CLAUDIO",
     "LAERTES"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a4_s21_001",
@@ -25907,7 +26142,10 @@
     "GERTRUDIS",
     "CLAUDIO",
     "LAERTES"
-   ]
+   ],
+   "audio": {
+    "bgm": "corte.ogg"
+   }
   },
   {
    "id": "a4_s22_001",
@@ -26178,7 +26416,10 @@
    },
    "_scene": "5.1",
    "_location": "cementerio",
-   "_present": []
+   "_present": [],
+   "audio": {
+    "bgm": "lamento.ogg"
+   }
   },
   {
    "id": "a5_s1_001",
@@ -26649,7 +26890,10 @@
    "_present": [
     "HAMLET",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "lamento.ogg"
+   }
   },
   {
    "id": "a5_s2_001",
@@ -28412,7 +28656,10 @@
     "HAMLET",
     "LAERTES",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "lamento.ogg"
+   }
   },
   {
    "id": "a5_s3_001",
@@ -28810,6 +29057,7 @@
    },
    "transition": null,
    "_speaker": "CLAUDIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/cementerio.png"
@@ -28819,14 +29067,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "gertrudis/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "claudio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -28898,6 +29146,7 @@
    },
    "transition": null,
    "_speaker": "HORACIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/cementerio.png"
@@ -28907,14 +29156,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "gertrudis/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "horacio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -29017,6 +29266,7 @@
    },
    "transition": null,
    "_speaker": "CLAUDIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/cementerio.png"
@@ -29026,14 +29276,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "gertrudis/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "claudio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -29166,6 +29416,7 @@
    },
    "transition": null,
    "_speaker": "CLAUDIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/cementerio.png"
@@ -29175,14 +29426,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "gertrudis/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "claudio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -29207,7 +29458,10 @@
    "_present": [
     "HAMLET",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "duelo.ogg"
+   }
   },
   {
    "id": "a5_s4_001",
@@ -29730,7 +29984,10 @@
     "HAMLET",
     "HORACIO",
     "ENRIQUE"
-   ]
+   ],
+   "audio": {
+    "bgm": "duelo.ogg"
+   }
   },
   {
    "id": "a5_s5_001",
@@ -31012,7 +31269,10 @@
    "_present": [
     "HAMLET",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "duelo.ogg"
+   }
   },
   {
    "id": "a5_s6_001",
@@ -31109,7 +31369,10 @@
    "_present": [
     "HAMLET",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "duelo.ogg"
+   }
   },
   {
    "id": "a5_s7_001",
@@ -31248,7 +31511,10 @@
    "_present": [
     "HAMLET",
     "HORACIO"
-   ]
+   ],
+   "audio": {
+    "bgm": "duelo.ogg"
+   }
   },
   {
    "id": "a5_s8_001",
@@ -31424,7 +31690,10 @@
     "GERTRUDIS",
     "LAERTES",
     "ENRIQUE"
-   ]
+   ],
+   "audio": {
+    "bgm": "duelo.ogg"
+   }
   },
   {
    "id": "a5_s9_001",
@@ -31824,6 +32093,7 @@
    },
    "transition": null,
    "_speaker": "ENRIQUE",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -31833,14 +32103,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "enrique/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -32033,6 +32303,7 @@
    },
    "transition": null,
    "_speaker": "ENRIQUE",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -32042,14 +32313,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "enrique/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -32212,6 +32483,7 @@
    },
    "transition": null,
    "_speaker": "GERTRUDIS",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -32221,14 +32493,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "gertrudis/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -32301,6 +32573,7 @@
    },
    "transition": null,
    "_speaker": "GERTRUDIS",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -32310,14 +32583,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "gertrudis/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -32390,6 +32663,7 @@
    },
    "transition": null,
    "_speaker": "GERTRUDIS",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -32399,14 +32673,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "gertrudis/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -32569,6 +32843,7 @@
    },
    "transition": null,
    "_speaker": "ENRIQUE",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -32578,14 +32853,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "enrique/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -32688,6 +32963,7 @@
    },
    "transition": null,
    "_speaker": "ENRIQUE",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -32697,14 +32973,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "enrique/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -32717,6 +32993,7 @@
    },
    "transition": null,
    "_speaker": "HORACIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -32726,14 +33003,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "horacio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -32746,6 +33023,7 @@
    },
    "transition": null,
    "_speaker": "ENRIQUE",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -32755,14 +33033,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "enrique/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -32865,6 +33143,7 @@
    },
    "transition": null,
    "_speaker": "GERTRUDIS",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -32874,14 +33153,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "gertrudis/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -33133,6 +33412,7 @@
    },
    "transition": null,
    "_speaker": "HORACIO",
+   "emphasis": "charCenter",
    "layers": {
     "bg1": {
      "src": "fondos/salon-trono.png"
@@ -33142,14 +33422,14 @@
      "x": 0.17,
      "y": 0
     },
-    "charCenter": {
-     "src": "hamlet/neutral.png",
-     "x": 0.5,
-     "y": 0
-    },
     "charRight": {
      "src": "laertes/neutral.png",
      "x": 0.83,
+     "y": 0
+    },
+    "charCenter": {
+     "src": "horacio/neutral.png",
+     "x": 0.5,
      "y": 0
     }
    }
@@ -33205,7 +33485,10 @@
     "HAMLET",
     "HORACIO",
     "ENRIQUE"
-   ]
+   ],
+   "audio": {
+    "bgm": "duelo.ogg"
+   }
   },
   {
    "id": "a5_s10_001",
@@ -33302,7 +33585,10 @@
     "FORTIMBRÁS",
     "HORACIO",
     "ENRIQUE"
-   ]
+   ],
+   "audio": {
+    "bgm": "duelo.ogg"
+   }
   },
   {
    "id": "a5_s11_001",

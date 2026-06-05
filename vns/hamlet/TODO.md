@@ -1,5 +1,7 @@
 # Hamlet VN — estado y tareas
 
+_Actualizado: **2026-06-06** · publicado en https://meowrhino.github.io/VNGenerator/_
+
 Leyenda: **[TÚ]** lo haces tú · **[YO]** lo hace Claude · **[TÚ→YO]** tú generas, yo lo encajo
 
 ---
@@ -10,6 +12,8 @@ Leyenda: **[TÚ]** lo haces tú · **[YO]** lo hace Claude · **[TÚ→YO]** tú
 - [TÚ→YO] **11/11 fondos** + **14/14 personajes** (neutrales)
 - [YO] **Skin Umineko** + tarjetas de acto/escena centradas
 - [YO] **Colocación múltiple** (≤3 en escena) + **resaltado del hablante**
+- [YO] **QA de puesta en escena**: el que habla **siempre** aparece y se resalta (92% con
+  sprite; el 7% restante son secundarios sin sprite → sale su nombre)
 - [YO] **Motor de expresiones**: heurística por línea + **overrides curados de los hitos**
   (espectro, ratonera, alcoba, locura de Ofelia, entierro, duelo) — drop-in
 - [YO] **Hoja de cues musical** (8 temas) + **SFX** + **transiciones dramáticas**, todo drop-in

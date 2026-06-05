@@ -4,6 +4,37 @@ Motor de novela visual web. **Vanilla HTML/CSS/JS, sin frameworks**, sin build s
 
 Estética arxiu/github (serio, tipográfico, sin sombras llamativas, paleta sobria con accent azul GitHub).
 
+---
+
+## 🎭 Hamlet — novela visual incluida
+
+Hay una VN completa montada con este motor: **Hamlet**, texto íntegro de la traducción de
+Leandro Fernández de Moratín (dominio público), con estética *sound novel* tipo Umineko.
+
+**▶ Jugar online: https://meowrhino.github.io/VNGenerator/** (entra en «Hamlet»)
+
+- **1233 slides**, 5 actos íntegros · **11 fondos** + **14 personajes** generados con IA
+- Skin propio (`css/theme-umineko.css`, se activa con `chapter.theme: "umineko"`), tarjetas
+  de acto/escena, colocación de varios personajes y resaltado del que habla
+- **Motor de expresiones** y **cues de audio** ya cableados en *drop-in*: sueltas la cara
+  (`vns/hamlet/img/<personaje>/<expresión>.png`) o el tema (`vns/hamlet/audio/<mood>.mp3`)
+  y aparece/suena solo donde toca
+
+Pipeline (`vns/hamlet/`):
+
+```
+build/build.py    # texto de Moratín -> chapter.json (parser + montaje)
+build/cutout.py   # recorta el fondo gris de un sprite -> PNG alpha
+build/place.py    # coloca lo de img/_incoming/ y reconstruye
+source/           # texto extraído del PDF
+PROMPTS-*.txt     # prompts para generar personajes, expresiones y música
+ART.md · TODO.md  # guía de arte y estado del proyecto
+```
+
+Para regenerar el capítulo tras añadir/parsear texto: `python3 vns/hamlet/build/build.py`.
+
+---
+
 ## Cómo arrancarlo
 
 Necesita servirlo por HTTP (los módulos ES no funcionan con `file://`):

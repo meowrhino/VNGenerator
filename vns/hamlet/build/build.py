@@ -436,15 +436,28 @@ def compose(acts, note):
             slides.append(card)
 
             castpos = scene_cast(sc['lines'])   # reparto fijo de la escena (hasta 3)
+            XMAP = {'charLeft': 0.30, 'charCenter': 0.5, 'charRight': 0.70}
             for li, line in enumerate(sc['lines'], 1):
-                # Estado visual COMPLETO por slide: fondo + todos los presentes con
-                # sprite en sus posiciones fijas (el motor mantiene los que no cambian).
                 sid = f'a{ai}_s{si}_{li:03d}'
+                sp = line['speaker']
+                disp = dict(castpos)               # ch -> (layer, x, slug, npath)
+                # Claridad: si el HABLANTE tiene sprite pero no está en el reparto fijo
+                # (escena con mucha gente), métele en un hueco libre o que tome el centro.
+                if sp not in disp:
+                    spr = find_asset(f'{slugify(sp)}/neutral')
+                    if spr:
+                        used = {v[0] for v in disp.values()}
+                        slot = next((c for c in ('charCenter', 'charLeft', 'charRight')
+                                     if c not in used), 'charCenter')
+                        if slot in used:           # reparto lleno: el hablante toma el centro
+                            disp = {c: v for c, v in disp.items() if v[0] != 'charCenter'}
+                        disp[sp] = (slot, XMAP[slot], slugify(sp), spr)
+                # Estado visual COMPLETO por slide: fondo + presentes en sus posiciones.
                 layers = {}
                 if bg:
                     layers['bg1'] = {'src': bg}
-                for ch, (layer, x, slug, npath) in castpos.items():
-                    if ch == line['speaker']:
+                for ch, (layer, x, slug, npath) in disp.items():
+                    if ch == sp:
                         expr = (EXPR_OVERRIDE.get(sid)
                                 or EXPR_SCENE_OVERRIDE.get((ai, si), {}).get(ch)
                                 or pick_expr(ch, line['text']))
@@ -455,10 +468,9 @@ def compose(acts, note):
                 sl = {'id': sid,
                       'text': {'speaker': line['display'], 'body': line['text']},
                       'transition': None,        # instant: sin parpadeo a negro por línea
-                      '_speaker': line['speaker']}
-                sp_slot = castpos.get(line['speaker'])
-                if sp_slot:
-                    sl['emphasis'] = sp_slot[0]   # capa del que habla (los demás se atenúan)
+                      '_speaker': sp}
+                if sp in disp:
+                    sl['emphasis'] = disp[sp][0]   # resalta siempre al que habla
                 if layers:
                     sl['layers'] = layers
                 slides.append(sl)
