@@ -19,3 +19,7 @@ Thumbs.db
 
 # Saves de prueba / dumps
 *.local.json
+
+# Arte fuente (originales sin recortar) y staging de captura — locales, no se publican
+vns/hamlet/img/_src/
+vns/hamlet/img/_incoming/

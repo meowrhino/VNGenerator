@@ -1,0 +1,57 @@
+PROMPTS DE PERSONAJES — Hamlet VN
+==================================
+Flujo: en Gemini (Nano Banana / gemini-2.5-flash-image) pega un prompt → Run →
+descarga el PNG → me dices el slug (p.ej. "gertrudis") y yo lo recorto y coloco.
+(O usa el bookmarklet y nómbralo con el slug.)
+
+Hechos: hamlet, horacio, claudio
+Pendientes: los de abajo.
+
+------------------------------------------------------------------
+[gertrudis]
+Full-body single character sprite of the Queen of Denmark, around 45, hair pinned up under a small jewelled diadem, wearing an elegant crimson and gold velvet renaissance gown with pearls, dignified but faintly anxious, standing in a calm neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+[ofelia]
+Full-body single character sprite of a gentle young noblewoman, around 18, long light auburn hair worn loose with a few small flowers in it, a pale blue and white renaissance dress, delicate and sweet, standing in a calm neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+[polonio]
+Full-body single character sprite of an old pompous court counselor, around 60, a long grey beard, a dark fur-trimmed courtier's robe with a chain of office, a fussy self-important air, standing in a calm neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+[laertes]
+Full-body single character sprite of a spirited young nobleman, around 22, short dark hair, elegant dark renaissance travelling clothes with a short cape, a rapier at his hip, proud, standing in a calm neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+[ricardo]
+Full-body single character sprite of a young male courtier (Rosencrantz), short hair, a fashionable muted green-grey doublet and hose, an ingratiating polite smile, standing in a calm neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+[guillermo]
+Full-body single character sprite of a young male courtier (Guildenstern), short hair, a fashionable muted blue-grey doublet and hose, an ingratiating polite smile, clearly a companion and near-twin of the other courtier Rosencrantz, standing in a calm neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+[marcelo]
+Full-body single character sprite of a castle night-watch soldier, a steel morion helmet and breastplate over a dark tunic, holding a halberd, a dark cloak, alert and serious, standing in a calm neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+[bernardo]
+Full-body single character sprite of a castle night-watch soldier, a steel helmet and breastplate, holding a halberd, a dark cloak, a bit stockier and older than the others, watchful, standing in a calm neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+[enrique]
+Full-body single character sprite of an affected fop courtier (Osric), an over-decorated slashed doublet with lace, a plumed hat, a simpering obsequious smile, standing in a calm neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+[la-sombra]   (el Espectro — el rey muerto)
+Full-body single character sprite of the ghost of the dead King of Denmark in full pale weathered plate armour, a gaunt sorrowful stern bearded face, an eerie cold spectral pallor with a faint pale glow, rendered as a solid opaque figure, standing in a slow solemn neutral pose facing the viewer, whole body from head to feet visible and centered, on a plain flat solid light-grey background with no scenery and no floor shadow, even soft frontal lighting, tall vertical full-body framing. ART STYLE: a sincere, slightly naive hand-drawn visual-novel character sprite in the spirit of late-2000s indie/doujin sound novels — flat cel coloring, visible imperfect ink linework, simple cheap shading, muted desaturated palette, gentle and a little melancholic. NOT polished modern anime, NOT glossy, NOT gacha, no airbrushing. 16th-century Danish renaissance court.
+
+------------------------------------------------------------------
+OPCIONALES (pocas líneas, si quieres rematar):
+[sepulturero-1] gravedigger, coarse cheerful old peasant with a spade and dirty hands.
+[fortimbras] young Norwegian warrior prince in armour with a fur cloak.
+(mismo marco + ART STYLE de arriba)
+
+EXPRESIONES: cuando estén los neutrales, hacemos 2ª pasada (cada personaje
+con 3-5 caras). Las listas están en ART.md.

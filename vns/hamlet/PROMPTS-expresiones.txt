@@ -1,0 +1,61 @@
+PROMPTS DE EXPRESIONES — Hamlet VN
+===================================
+TRUCO: NO generes desde cero. En Gemini, SUBE como referencia el sprite NEUTRAL del
+personaje (el original con fondo gris; los tienes en vns/hamlet/img/_src/) y pide cambiar
+SOLO la cara. Así mantiene identidad, ropa, pose y estilo.
+
+PLANTILLA (sube el neutral + pega esto, cambiando [EMOTION]):
+-------------------------------------------------------------
+Using the attached character image as the exact reference, keep the IDENTICAL face shape,
+hairstyle, costume, body, proportions, pose and the same flat, slightly naive hand-drawn
+art style, on the same plain light-grey background. Change ONLY the facial expression to:
+[EMOTION].
+-------------------------------------------------------------
+
+FLUJO: genera → descarga → dime "es <personaje>, <expresión>" (p.ej. "hamlet, ira") y yo
+lo recorto y coloco en <slug>/<expresión>.png. El motor ya lo usará en las líneas que toque
+(y donde no haya cara, cae a neutral solo).
+
+PRIORIDAD: empieza por HAMLET y OFELIA (los que más emoción cargan).
+
+=========== HAMLET  (slug: hamlet) ===========
+[melancolico]  a quiet downcast melancholy, eyes lowered, faint sadness
+[ira]          furious rage, brows knitted hard, teeth clenched, intense
+[ironia]       a bitter sardonic half-smile, one eyebrow raised, mocking
+[dolor]        deep grief, eyes glistening, holding back tears
+[locura]       a wild unsettling feigned-madness stare with an eerie grin
+[decidido]     cold hardened resolve, jaw set, determined
+
+=========== OFELIA  (slug: ofelia) ===========
+[sonrojo]      shy blush with a small tender smile, looking slightly away
+[llanto]       crying, tears on her cheeks, sorrowful
+[locura]       a vacant distant mad stare, gentle but broken, lost
+[miedo]        frightened, wide fearful eyes
+
+=========== CLAUDIO  (slug: claudio) ===========
+[afable]       a false warm, charming, reassuring smile
+[culpa]        guilty and uneasy, fearful darting eyes, tense
+[ira]          angry and commanding, stern
+
+=========== GERTRUDIS  (slug: gertrudis) ===========
+[preocupada]   worried and anxious, brow furrowed
+[verguenza]    ashamed and hurt, looking away, eyes down
+[ternura]      tender, warm, affectionate
+
+=========== POLONIO  (slug: polonio) ===========
+[intrigante]   a sly, scheming, knowing look
+[sorpresa]     surprised, taken aback, eyes wide
+
+=========== LAERTES  (slug: laertes) ===========
+[furia]        vengeful burning fury
+[dolor]        grief-stricken, anguished
+
+=========== HORACIO  (slug: horacio) ===========
+[asombro]      astonished, awe-struck, eyes wide
+[preocupacion] concerned, troubled
+
+=========== LA SOMBRA  (slug: la-sombra) ===========
+[acusador]     a stern, accusing, sorrowful glare
+
+(Los secundarios —ricardo, guillermo, marcelo, bernardo, enrique, sepulturero-1— se
+quedan en neutral; no hace falta darles expresiones salvo que quieras.)

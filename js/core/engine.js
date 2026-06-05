@@ -139,6 +139,13 @@ export class Engine {
     // 2) Movement (msp/amsp) si lo hay
     if (slide.motion) await applyMotion(this.layers, slide.motion);
 
+    // 2.5) Resaltar al hablante: atenúa las capas de personaje que NO hablan.
+    // La clase va en el div de la capa (estable), así no la pisa la transición.
+    ['charLeft', 'charCenter', 'charRight'].forEach(n => {
+      const el = this.layers.getEl?.(n);
+      if (el) el.classList.toggle('vn-dim', !!slide.emphasis && n !== slide.emphasis);
+    });
+
     // 3) Texto (si hay) → registrar en history
     if (slide.text) {
       this.history.push({

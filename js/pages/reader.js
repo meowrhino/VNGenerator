@@ -22,7 +22,9 @@ const root = document.getElementById('vn-root');
 
   try {
     const chapter = await loadChapter(path);
+    if (chapter.theme) root.dataset.theme = chapter.theme;   // skin opcional (p.ej. "umineko")
     const engine = new Engine(root);
+    window.engine = engine; // handle de depuración (jump a slides, inspección)
     await engine.play(chapter);
   } catch (err) {
     root.innerHTML = `

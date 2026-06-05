@@ -1,0 +1,50 @@
+MÚSICA Y SFX — Hamlet VN
+=========================
+Necesitas 8 temas instrumentales EN BUCLE (tono melancólico/gótico, NADA épico
+hollywoodiense) + un par de efectos. Genéralos con IA (Suno/Udio) o pilla CC0/dominio
+público. Guárdalos en  vns/hamlet/audio/  con el nombre exacto del slug (.mp3 u .ogg).
+El motor los cablea SOLO si existen (drop-in) y no reinicia la música si no cambia de tema.
+
+Consejo: ~1-2 min, que cierre bien para hacer LOOP, instrumental, sin voz, suave.
+
+PROMPTS (Suno/Udio) — uno por archivo:
+
+[principal.mp3]   (tema principal · 20 escenas)
+Melancholic baroque chamber piece, solo harpsichord with soft sustained strings, slow and
+sorrowful, introspective and tragic, sparse, instrumental, seamless loop, no drums.
+
+[corte.mp3]   (la corte / palacio · 38 escenas)
+Tense regal baroque, low strings and harpsichord, formal and stately but uneasy and
+menacing, courtly dread, restrained, instrumental, seamless loop.
+
+[tension.mp3]   (guardia nocturna / suspense · 8 escenas)
+Cold dark ambient, sustained low strings and a distant howling wind, sparse and eerie,
+creeping suspense, almost no melody, instrumental, seamless loop.
+
+[espectro.mp3]   (el Espectro · 2 escenas)
+Ghostly and ominous, deep cello drones with a faint distant choir, cold cavernous reverb,
+supernatural dread, extremely slow, instrumental, seamless loop.
+
+[ofelia.mp3]   (la locura de Ofelia · 3 escenas)
+Fragile broken music-box / celesta melody, a sweet sad lullaby that turns subtly unsettling
+and out of tune, delicate and heartbreaking, instrumental, seamless loop.
+
+[lamento.mp3]   (cementerio / duelo y muerte · 3 escenas)
+Funeral lament, mournful solo viola and cello, very slow, grieving, sparse and bare,
+instrumental, seamless loop.
+
+[duelo.mp3]   (el duelo final · 8 escenas)
+Dramatic tragic baroque strings slowly building dread and tension, urgent but doomed,
+dark and fatal, instrumental, seamless loop.
+
+[marcha.mp3]   (el ejército de Fortimbrás · 3 escenas)
+Distant solemn military march, muffled timpani and cold brass, grand and bleak, heard from
+afar, instrumental, seamless loop.
+
+------------------------------------------------------------------
+SFX (efectos puntuales, en vns/hamlet/audio/):
+[aparicion.mp3]  un golpe grave / soplo fantasmal con reverb (aparece el Espectro)
+[espadas.mp3]    choque metálico de espadas (el duelo)
+
+(El viento, el mar y el murmullo de corte van DENTRO de los temas de música —no hacen
+falta como bucles aparte—; por eso los prompts de tension/espectro piden "wind", etc.)

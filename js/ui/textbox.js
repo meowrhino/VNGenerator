@@ -29,6 +29,8 @@ export class Textbox {
   render(text, opts = {}) {
     if (!text) { this.hide(); return; }
     this.show();
+    // Slides "tarjeta" (intro/acto/escena): texto centrado en pantalla, sin caja
+    this.el.classList.toggle('vn-card', !!text.center);
     this.speakerEl.textContent = text.speaker || '';
     this.speakerEl.style.display = text.speaker ? '' : 'none';
     if (this.typewriter) this.typewriter.destroy();

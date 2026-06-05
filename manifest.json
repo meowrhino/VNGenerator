@@ -3,6 +3,14 @@
   "description": "Biblioteca de novelas visuales · vanilla web · sin frameworks",
   "vns": [
     {
+      "title": "Hamlet",
+      "author": "William Shakespeare · trad. Moratín",
+      "description": "La tragedia de Hamlet, príncipe de Dinamarca. Texto íntegro de la traducción de Leandro Fernández de Moratín, en formato novela visual.",
+      "path": "./vns/hamlet/chapter.json",
+      "cover": "./vns/hamlet/cover.svg",
+      "tags": ["tragedia", "shakespeare", "clásico", "dominio público"]
+    },
+    {
       "title": "Demo: Despertar",
       "author": "Manu",
       "description": "Capítulo de demostración con personajes, fondos, sobrefondo y bifurcación.",

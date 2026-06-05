@@ -1,0 +1,188 @@
+/* theme-umineko.css — Skin "sound novel" para el lector.
+ * Se activa solo cuando #vn-root tiene data-theme="umineko" (lo pone reader.js
+ * desde chapter.theme), así no afecta a las demás VNs.
+ * Estética: serifa literaria, caja translúcida con filo dorado, viñeta, oro tenue.
+ * Homenaje a la sinceridad de las sound novels, sin copiar a nadie. */
+
+#vn-root[data-theme="umineko"] {
+  --u-gold: #c9a86a;
+  --u-gold-soft: rgba(201,168,106,0.5);
+  --u-ink: #ece3d4;          /* blanco cálido del texto */
+  --u-panel-a: rgba(16,12,20,0.84);
+  --u-panel-b: rgba(8,6,12,0.92);
+  background: #05040a;
+}
+
+/* Viñeta atmosférica sobre el escenario (debajo de la caja de texto) */
+#vn-root[data-theme="umineko"] .vn-stage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 90% 80% at 50% 42%, transparent 58%, rgba(0,0,0,0.5) 100%),
+    linear-gradient(to bottom, rgba(0,0,0,0.18) 0%, transparent 22%);
+}
+
+/* ===== Caja de texto: panel central con filo dorado ===== */
+#vn-root[data-theme="umineko"] .vn-textbox {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  bottom: 3%;
+  width: min(1300px, 92%);
+  min-height: 22%;
+  padding: 1.5em 2.4em 1.7em;
+  background: linear-gradient(var(--u-panel-a), var(--u-panel-b));
+  border: 1px solid var(--u-gold-soft);
+  border-radius: 8px;
+  box-shadow:
+    0 10px 50px rgba(0,0,0,0.65),
+    inset 0 0 38px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  color: var(--u-ink);
+  font-family: 'EB Garamond', Georgia, var(--font-serif), serif;
+  font-size: clamp(17px, 1.85vw, 25px);
+  line-height: 1.6;
+}
+
+/* Filo dorado interior (doble línea fina, muy "libro") */
+#vn-root[data-theme="umineko"] .vn-textbox::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(201,168,106,0.18);
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+/* Nombre del que habla: placa dorada en versalitas */
+#vn-root[data-theme="umineko"] .vn-speaker {
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 600;
+  color: var(--u-gold);
+  font-size: 0.82em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.55em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid rgba(201,168,106,0.22);
+  display: inline-block;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+
+#vn-root[data-theme="umineko"] .vn-text {
+  text-shadow: 0 1px 4px rgba(0,0,0,0.85);
+}
+#vn-root[data-theme="umineko"] .vn-text em { color: #e7d9bf; opacity: 1; }
+#vn-root[data-theme="umineko"] .vn-text strong { color: var(--u-gold); font-weight: 600; }
+
+/* Indicador de avance: ▼ dorado */
+#vn-root[data-theme="umineko"] .vn-prompt {
+  right: 1.6em;
+  bottom: 0.7em;
+  color: var(--u-gold);
+  font-family: 'Cinzel', serif;
+  opacity: 0.7;
+}
+
+/* ===== Choices ===== */
+#vn-root[data-theme="umineko"] .vn-choice-prompt {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--u-ink);
+  font-size: 1.6em;
+}
+#vn-root[data-theme="umineko"] .vn-choice {
+  background: linear-gradient(var(--u-panel-a), var(--u-panel-b));
+  border: 1px solid var(--u-gold-soft);
+  color: var(--u-ink);
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.15em;
+  border-radius: 6px;
+}
+#vn-root[data-theme="umineko"] .vn-choice::before { content: '❖'; color: var(--u-gold); }
+#vn-root[data-theme="umineko"] .vn-choice:hover {
+  background: linear-gradient(rgba(34,26,18,0.92), rgba(20,15,10,0.95));
+  border-color: var(--u-gold);
+}
+
+/* ===== Topbar más discreta ===== */
+#vn-root[data-theme="umineko"] .vn-title {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.12em;
+  color: rgba(201,168,106,0.65);
+}
+
+/* ===== Pantalla de fin ===== */
+#vn-root[data-theme="umineko"] .vn-end {
+  background: radial-gradient(ellipse at center, #14101c 0%, #05040a 100%);
+  font-family: 'EB Garamond', Georgia, serif;
+  color: var(--u-ink);
+}
+#vn-root[data-theme="umineko"] .vn-end h2 {
+  font-family: 'Cinzel', serif;
+  color: var(--u-gold);
+  letter-spacing: 0.18em;
+}
+
+/* ===== Resaltar al hablante: atenúa a los personajes que callan ===== */
+#vn-root[data-theme="umineko"] .vn-layer-img {
+  transition: filter 0.35s ease, transform var(--tr-base) ease, opacity var(--tr-base);
+}
+#vn-root[data-theme="umineko"] .vn-layer.vn-dim .vn-layer-img {
+  filter: brightness(0.5) saturate(0.72);
+}
+
+/* ===== Slides "tarjeta" (intro/acto/escena/fin): título centrado en pantalla =====
+ * El motor pone la clase .vn-card cuando text.center es true. */
+#vn-root[data-theme="umineko"] .vn-textbox.vn-card {
+  inset: 0;
+  left: 0; right: 0; top: 0; bottom: 0;
+  transform: none;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  padding: 2em;
+}
+#vn-root[data-theme="umineko"] .vn-textbox.vn-card::before { display: none; }
+#vn-root[data-theme="umineko"] .vn-textbox.vn-card .vn-prompt { display: none; }
+#vn-root[data-theme="umineko"] .vn-textbox.vn-card .vn-text {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: clamp(24px, 3.2vw, 46px);
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  max-width: 32ch;
+  color: var(--u-ink);
+}
+#vn-root[data-theme="umineko"] .vn-textbox.vn-card .vn-text strong {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: var(--u-ink);
+  letter-spacing: 0.1em;
+}
+#vn-root[data-theme="umineko"] .vn-textbox.vn-card .vn-text em {
+  font-style: italic;
+  font-size: 0.8em;
+  color: var(--u-gold);
+}
+
+@media (max-width: 700px) {
+  #vn-root[data-theme="umineko"] .vn-textbox {
+    width: 94%;
+    bottom: 1.5%;
+    padding: 1.1em 1.3em 1.4em;
+    font-size: 17px;
+    min-height: 26%;
+  }
+}

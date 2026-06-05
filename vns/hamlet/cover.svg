@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="hSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05060d"/>
+      <stop offset="0.5" stop-color="#0a1020"/>
+      <stop offset="1" stop-color="#111a2e"/>
+    </linearGradient>
+    <radialGradient id="hMoon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f4f1e4"/>
+      <stop offset="0.7" stop-color="#cfd4d8"/>
+      <stop offset="1" stop-color="#aeb6be"/>
+    </radialGradient>
+    <radialGradient id="hHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#cdd6e6" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#cdd6e6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hVig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.45" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#hSky)"/>
+
+  <!-- Estrellas frías -->
+  <g fill="#dfe6f2">
+    <circle cx="150" cy="90" r="1.6" opacity="0.7"/>
+    <circle cx="300" cy="150" r="1.2" opacity="0.5"/>
+    <circle cx="520" cy="70" r="1.8" opacity="0.8"/>
+    <circle cx="700" cy="130" r="1.1" opacity="0.5"/>
+    <circle cx="1020" cy="80" r="1.5" opacity="0.7"/>
+    <circle cx="1180" cy="150" r="1.2" opacity="0.5"/>
+    <circle cx="1320" cy="90" r="1.7" opacity="0.8"/>
+    <circle cx="1460" cy="160" r="1.2" opacity="0.5"/>
+  </g>
+
+  <!-- Luna fría -->
+  <circle cx="1180" cy="250" r="240" fill="url(#hHalo)"/>
+  <circle cx="1180" cy="250" r="120" fill="url(#hMoon)"/>
+  <circle cx="1140" cy="220" r="22" fill="#000" opacity="0.06"/>
+  <circle cx="1215" cy="285" r="30" fill="#000" opacity="0.05"/>
+
+  <!-- Espectro del Rey: una silueta pálida y tenue sobre la muralla -->
+  <g opacity="0.16" fill="#cdd6e6">
+    <path d="M250 760 q -22 -150 28 -250 q 22 -44 60 -44 q 38 0 60 44 q 50 100 28 250 q -40 30 -88 30 q -48 0 -88 -30 Z"/>
+    <circle cx="338" cy="430" r="40"/>
+  </g>
+
+  <!-- Muralla almenada de Elsinor -->
+  <g fill="#070a12">
+    <rect x="0" y="720" width="1600" height="180"/>
+    <!-- almenas -->
+    <g>
+      <rect x="40"  y="690" width="48" height="40"/>
+      <rect x="140" y="690" width="48" height="40"/>
+      <rect x="240" y="690" width="48" height="40"/>
+      <rect x="340" y="690" width="48" height="40"/>
+      <rect x="440" y="690" width="48" height="40"/>
+      <rect x="540" y="690" width="48" height="40"/>
+      <rect x="640" y="690" width="48" height="40"/>
+      <rect x="740" y="690" width="48" height="40"/>
+      <rect x="840" y="690" width="48" height="40"/>
+      <rect x="940" y="690" width="48" height="40"/>
+      <rect x="1040" y="690" width="48" height="40"/>
+      <rect x="1140" y="690" width="48" height="40"/>
+      <rect x="1240" y="690" width="48" height="40"/>
+      <rect x="1340" y="690" width="48" height="40"/>
+      <rect x="1440" y="690" width="48" height="40"/>
+      <rect x="1540" y="690" width="48" height="40"/>
+    </g>
+    <!-- torre izquierda -->
+    <rect x="60" y="560" width="150" height="280"/>
+    <rect x="60" y="540" width="34" height="34"/>
+    <rect x="118" y="540" width="34" height="34"/>
+    <rect x="176" y="540" width="34" height="34"/>
+    <rect x="110" y="610" width="50" height="70" fill="#1b2740"/>
+    <!-- torre derecha -->
+    <rect x="1390" y="560" width="150" height="280"/>
+    <rect x="1390" y="540" width="34" height="34"/>
+    <rect x="1448" y="540" width="34" height="34"/>
+    <rect x="1506" y="540" width="34" height="34"/>
+    <rect x="1440" y="610" width="50" height="70" fill="#1b2740"/>
+  </g>
+
+  <rect width="1600" height="900" fill="url(#hVig)"/>
+
+  <!-- Título -->
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <text x="800" y="400" font-size="150" font-weight="700" fill="#f4f1e4" letter-spacing="22">HAMLET</text>
+    <line x1="560" y1="450" x2="1040" y2="450" stroke="#8a93a6" stroke-width="1.5"/>
+    <text x="800" y="492" font-size="26" fill="#c9cedb" letter-spacing="13">PRÍNCIPE DE DINAMARCA</text>
+  </g>
+
+  <!-- Pie -->
+  <text x="800" y="852" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#7e8696" letter-spacing="3">William Shakespeare · trad. Moratín</text>
+</svg>

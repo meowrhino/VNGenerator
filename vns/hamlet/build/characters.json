@@ -1,0 +1,266 @@
+{
+ "HAMLET": {
+  "display": "Hamlet",
+  "slug": "hamlet",
+  "lines": 365,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "HORACIO": {
+  "display": "Horacio",
+  "slug": "horacio",
+  "lines": 109,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "CLAUDIO": {
+  "display": "Claudio",
+  "slug": "claudio",
+  "lines": 104,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "POLONIO": {
+  "display": "Polonio",
+  "slug": "polonio",
+  "lines": 89,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "GERTRUDIS": {
+  "display": "Gertrudis",
+  "slug": "gertrudis",
+  "lines": 69,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "LAERTES": {
+  "display": "Laertes",
+  "slug": "laertes",
+  "lines": 59,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "OFELIA": {
+  "display": "Ofelia",
+  "slug": "ofelia",
+  "lines": 58,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "RICARDO": {
+  "display": "Ricardo",
+  "slug": "ricardo",
+  "lines": 49,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "MARCELO": {
+  "display": "Marcelo",
+  "slug": "marcelo",
+  "lines": 32,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "SEPULTURERO 1": {
+  "display": "Sepulturero 1º",
+  "slug": "sepulturero-1",
+  "lines": 30,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "GUILLERMO": {
+  "display": "Guillermo",
+  "slug": "guillermo",
+  "lines": 28,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "ENRIQUE": {
+  "display": "Enrique",
+  "slug": "enrique",
+  "lines": 23,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "BERNARDO": {
+  "display": "Bernardo",
+  "slug": "bernardo",
+  "lines": 19,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "LA SOMBRA": {
+  "display": "La Sombra",
+  "slug": "la-sombra",
+  "lines": 14,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "REYNALDO": {
+  "display": "Reynaldo",
+  "slug": "reynaldo",
+  "lines": 13,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "SEPULTURERO 2": {
+  "display": "Sepulturero 2º",
+  "slug": "sepulturero-2",
+  "lines": 11,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "FRANCISCO": {
+  "display": "Francisco",
+  "slug": "francisco",
+  "lines": 8,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "CÓMICO 1": {
+  "display": "Cómico 1º",
+  "slug": "comico-1",
+  "lines": 8,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "TODOS": {
+  "display": "Todos",
+  "slug": "todos",
+  "lines": 7,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "CAPITÁN": {
+  "display": "Capitán",
+  "slug": "capitan",
+  "lines": 7,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "FORTIMBRÁS": {
+  "display": "Fortimbrás",
+  "slug": "fortimbras",
+  "lines": 6,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "CABALLERO": {
+  "display": "Caballero",
+  "slug": "caballero",
+  "lines": 5,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "LOS DOS": {
+  "display": "Los dos",
+  "slug": "los-dos",
+  "lines": 4,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "CÓMICO 2": {
+  "display": "Cómico 2º",
+  "slug": "comico-2",
+  "lines": 4,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "CÓMICO 3": {
+  "display": "Cómico 3º",
+  "slug": "comico-3",
+  "lines": 3,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "VOCES": {
+  "display": "Voces",
+  "slug": "voces",
+  "lines": 3,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "VOLTIMAN": {
+  "display": "Voltiman",
+  "slug": "voltiman",
+  "lines": 2,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "CÓMICO 4": {
+  "display": "Cómico 4º",
+  "slug": "comico-4",
+  "lines": 2,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "MARINERO 1": {
+  "display": "Marinero 1º",
+  "slug": "marinero-1",
+  "lines": 2,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "SEPULTURERO": {
+  "display": "Sepulturero",
+  "slug": "sepulturero",
+  "lines": 2,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "EL CURA": {
+  "display": "El Cura",
+  "slug": "el-cura",
+  "lines": 2,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "CRIADO": {
+  "display": "Criado",
+  "slug": "criado",
+  "lines": 1,
+  "expressions": [
+   "neutral"
+  ]
+ },
+ "EMBAJADOR 1": {
+  "display": "Embajador 1º",
+  "slug": "embajador-1",
+  "lines": 1,
+  "expressions": [
+   "neutral"
+  ]
+ }
+}
